@@ -14,7 +14,15 @@ INSERT INTO "klanten" (id,voornaam,achternaam,straatnaam,huisnummer,gemeente,pos
 ```
 ### Recourse
 > https://www.generatedata.com/
+#### Straatnamen
+```
+Mussenstraat|Ravenstraat|Bondgenotenlaan|Martelarenplein|Parijsstraat|Urselweg|Kemmelbergstraat
+```
+#### Gemeentes
+```
+Leuven|Knokke-Heist|Kessel-lo|Maldegem|Wilsele|Tienen|Tielt-Winge|Diest|Begijnendijk|Geetbets
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5ODAzMDE3Nyw2NjM1MzI4OSwtOTU1Mj
+eyJoaXN0b3J5IjpbMTg1NDM1MjQyOSw2NjM1MzI4OSwtOTU1Mj
 Q5MTA3XX0=
 -->
