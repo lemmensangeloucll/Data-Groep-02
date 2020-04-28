@@ -11,7 +11,15 @@ grant all on schema "R1TX32_team02" TO "r???????";
 ```
 SET search_path TO R1TX32_team02;
 ```
+ > TIP!
+Als je een CREATE TABLE statement toevoegt in je CREATE script (na testen van dit statement), voeg dan ineens ook de DROP TABLE statement vooraan toe in je DROP script. 
+Zo ben je zeker dat de volgorde correct is. 
+Als je dan iets wil aanpassen in een tabel, pas dan ineens aan in het CREATE script en laat dan eerst het DROP script runnen en het volledige CREATE script. Zo ben je ook zeker dat er zich geen fouten voordoen (of kan je ze onmiddellijk oplossen)
 
+### Aanmaken van de tabbelen
+```
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3NzM5MTkxOV19
+eyJoaXN0b3J5IjpbMjA4MTg1MzYzNSwxODc3MzkxOTE5XX0=
 -->
