@@ -141,8 +141,7 @@ CREATE TABLE IF NOT EXISTS R1TX32_team02.faciliteiten (
 CREATE TABLE IF NOT EXISTS R1TX32_team02.bungalowtype_has_faciliteiten (
   bungalowtype INT NOT NULL,
   faciliteit INT NOT NULL,
-  PRIMARY KEY (bungalowtype, faciliteit)
- ,
+  PRIMARY KEY (bungalowtype, faciliteit),
   CONSTRAINT fk_bungalowtype_has_faciliteiten_bungalowtype
     FOREIGN KEY (bungalowtype)
     REFERENCES R1TX32_team02.bungalowtype (id)
@@ -152,10 +151,65 @@ CREATE TABLE IF NOT EXISTS R1TX32_team02.bungalowtype_has_faciliteiten (
     FOREIGN KEY (faciliteit)
     REFERENCES R1TX32_team02.faciliteiten (id)
     ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-;
+    ON UPDATE NO ACTION
+    );
+
+CREATE TABLE IF NOT EXISTS R1TX32_team02.facturen (
+  id INT NOT NULL,
+  factuurnummer text NULL,
+  beschrijving text NULL,
+  prijs DECIMAL(10,2) NULL,
+  btw DECIMAL(10,2) NULL,
+  korting DECIMAL(10,2) NULL,
+  totale_prijs DECIMAL(20,2) NULL,
+  klant INT NOT NULL,
+  PRIMARY KEY (id, klant),
+  CONSTRAINT fk_facturen_klanten1
+    FOREIGN KEY (klant)
+    REFERENCES R1TX32_team02.klanten (id)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION
+    );
+
+CREATE TABLE IF NOT EXISTS R1TX32_team02.reparatie_aanvragen (
+  aanvraagnummer INT NOT NULL,
+  tijdstip date NULL,
+  prioriteit text NULL,
+  beschrijving text NULL,
+  vaardigheid text NULL,
+  klant INT NOT NULL,
+  bungalow INT NOT NULL,
+  PRIMARY KEY (aanvraagnummer, bungalow),
+  CONSTRAINT fk_reparatie_aanvragen_klanten1
+    FOREIGN KEY (klant)
+    REFERENCES R1TX32_team02.klanten (id)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT fk_reparatie_aanvragen_bungalow1
+    FOREIGN KEY (bungalow)
+    REFERENCES R1TX32_team02.bungalow (bungalownummer)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION
+    );
+
+CREATE TABLE IF NOT EXISTS R1TX32_team02.reservaties_has_zone (
+  reservatie INT NOT NULL,
+  zone INT NOT NULL,
+  prijs DECIMAL(10,2) NULL,
+  PRIMARY KEY (reservatie, zone),
+  CONSTRAINT fk_reservaties_has_zone_reservaties1
+    FOREIGN KEY (reservatie)
+    REFERENCES R1TX32_team02.reservaties (reservatienummer)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT fk_reservaties_has_zone_zone1
+    FOREIGN KEY (zone)
+    REFERENCES R1TX32_team02.zone (id)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION
+    );
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzk2NDE3NTUsMjA4MTg1MzYzNSwxOD
-c3MzkxOTE5XX0=
+eyJoaXN0b3J5IjpbMTM3MjY2MTM1NiwyMDgxODUzNjM1LDE4Nz
+czOTE5MTldfQ==
 -->
