@@ -29,10 +29,31 @@ CREATE TABLE IF NOT EXISTS R1TX32_team02.klanten (
   PRIMARY KEY (id)
   );
 
+CREATE TABLE IF NOT EXISTS R1TX32_team02.bungalowpark (
+  id INT NOT NULL,
+  straat text NULL,
+  huisnummer text NULL,
+  postcode text NULL,
+  gemeente text NULL,
+  PRIMARY KEY (id)
+  );
 
+CREATE TABLE IF NOT EXISTS R1TX32_team02.periode (
+  id INT NOT NULL,
+  duur text NULL,
+  datum date NULL,
+  seizoen text NULL,
+  PRIMARY KEY (id)
+  );
 
+CREATE TABLE IF NOT EXISTS R1TX32_team02.bungalowtype (
+  id INT NOT NULL,
+  klasse text NULL,
+  capaciteit INT NULL,
+  PRIMARY KEY (id))
+;
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1MTAxODY1OCwyMDgxODUzNjM1LDE4Nz
-czOTE5MTldfQ==
+eyJoaXN0b3J5IjpbLTE3OTA0MDM5NjcsMjA4MTg1MzYzNSwxOD
+c3MzkxOTE5XX0=
 -->
