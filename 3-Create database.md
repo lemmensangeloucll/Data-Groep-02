@@ -18,10 +18,21 @@ Als je dan iets wil aanpassen in een tabel, pas dan ineens aan in het CREATE scr
 
 ### Aanmaken van de tabbelen
 ```
+CREATE TABLE IF NOT EXISTS R1TX32_team02.klanten (
+  id INT NOT NULL,
+  voornaam text NOT NULL,
+  achternaam text NOT NULL,
+  straatnaam text NOT NULL,
+  huisnummer text NOT NULL,
+  gemeente text NOT NULL,
+  postcode text NOT NULL,
+  PRIMARY KEY (id)
+  );
+
 
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1MjAzNzY1MywyMDgxODUzNjM1LDE4Nz
+eyJoaXN0b3J5IjpbLTg1MTAxODY1OCwyMDgxODUzNjM1LDE4Nz
 czOTE5MTldfQ==
 -->
