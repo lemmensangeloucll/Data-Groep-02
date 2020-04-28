@@ -19,7 +19,9 @@ Als je dan iets wil aanpassen in een tabel, pas dan ineens aan in het CREATE scr
 ### Aanmaken van de tabbelen
 ```
 
+
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4MTg1MzYzNSwxODc3MzkxOTE5XX0=
+eyJoaXN0b3J5IjpbMTI1MjAzNzY1MywyMDgxODUzNjM1LDE4Nz
+czOTE5MTldfQ==
 -->
