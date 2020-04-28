@@ -1,5 +1,5 @@
 ## Inserts into
-### Voorbeelden
+### Klanten
 ```
 INSERT INTO "klanten" (id,voornaam,achternaam,straatnaam,huisnummer,gemeente,postcode) VALUES (1,'Lavinia','Ramos','Urselweg',35,'Maldegem','5452'),(2,'Clarke','Dean','Urselweg',152,'Diest','7083'),(3,'Linda','Gates','Parijsstraat',249,'Kessel-lo','4997'),(4,'Hadassah','Shepherd','Urselweg',228,'Tienen','6388'),(5,'Kibo','Foley','Bondgenotenlaan',189,'Diest','2134'),(6,'Alisa','Wilkinson','Kemmelbergstraat',215,'Leuven','6454'),(7,'Jonas','Burgess','Ravenstraat',144,'Knokke-Heist','5858'),(8,'Chelsea','Morrison','Martelarenplein',83,'Leuven','1576'),(9,'Tatyana','Ortiz','Kemmelbergstraat',157,'Tielt-Winge','8480'),(10,'Gage','Bass','Kemmelbergstraat',22,'Tielt-Winge','6381');
 INSERT INTO "klanten" (id,voornaam,achternaam,straatnaam,huisnummer,gemeente,postcode) VALUES (11,'Lester','Nolan','Martelarenplein',163,'Tielt-Winge','7985'),(12,'Cynthia','Sloan','Urselweg',12,'Knokke-Heist','2548'),(13,'Iliana','Ware','Urselweg',4,'Knokke-Heist','1271'),(14,'Christen','Salas','Kemmelbergstraat',216,'Maldegem','5579'),(15,'Nyssa','Wheeler','Urselweg',245,'Kessel-lo','5112'),(16,'Maggy','Dunn','Parijsstraat',176,'Begijnendijk','9013'),(17,'Cairo','Gates','Martelarenplein',204,'Tielt-Winge','4864'),(18,'Summer','Garrison','Ravenstraat',193,'Knokke-Heist','1015'),(19,'Brennan','Rivera','Martelarenplein',197,'Diest','5094'),(20,'Hilda','Pratt','Martelarenplein',127,'Kessel-lo','5419');
@@ -11,11 +11,10 @@ INSERT INTO "klanten" (id,voornaam,achternaam,straatnaam,huisnummer,gemeente,pos
 INSERT INTO "klanten" (id,voornaam,achternaam,straatnaam,huisnummer,gemeente,postcode) VALUES (71,'Keely','William','Martelarenplein',113,'Diest','3473'),(72,'Lee','Logan','Bondgenotenlaan',119,'Leuven','3293'),(73,'Olympia','Walton','Martelarenplein',27,'Begijnendijk','8020'),(74,'Quamar','Gates','Parijsstraat',43,'Begijnendijk','4643'),(75,'Hermione','Mccarthy','Parijsstraat',90,'Maldegem','3288'),(76,'Kim','Maddox','Martelarenplein',188,'Begijnendijk','8311'),(77,'Peter','Parrish','Kemmelbergstraat',196,'Kessel-lo','8405'),(78,'Willow','Mack','Ravenstraat',149,'Diest','2137'),(79,'Owen','Bailey','Martelarenplein',118,'Tielt-Winge','7653'),(80,'Leila','Powers','Bondgenotenlaan',239,'Tielt-Winge','1092');
 INSERT INTO "klanten" (id,voornaam,achternaam,straatnaam,huisnummer,gemeente,postcode) VALUES (81,'Ramona','Moses','Ravenstraat',250,'Tienen','6188'),(82,'Athena','Cole','Urselweg',25,'Knokke-Heist','6585'),(83,'Conan','Rogers','Parijsstraat',81,'Tienen','6700'),(84,'Devin','Roth','Parijsstraat',150,'Geetbets','9730'),(85,'Rhea','Mcclure','Martelarenplein',4,'Leuven','7543'),(86,'Noble','Green','Kemmelbergstraat',6,'Begijnendijk','7409'),(87,'Flavia','Finley','Bondgenotenlaan',159,'Leuven','3595'),(88,'Deacon','Hatfield','Ravenstraat',98,'Knokke-Heist','8675'),(89,'Forrest','Lindsey','Mussenstraat',173,'Tielt-Winge','5217'),(90,'Gregory','Jefferson','Bondgenotenlaan',229,'Maldegem','1989');
 INSERT INTO "klanten" (id,voornaam,achternaam,straatnaam,huisnummer,gemeente,postcode) VALUES (91,'Madaline','Barlow','Urselweg',22,'Geetbets','7724'),(92,'Russell','Maxwell','Bondgenotenlaan',151,'Tienen','4452'),(93,'Slade','Rodriguez','Parijsstraat',230,'Knokke-Heist','8316'),(94,'Halee','Valdez','Urselweg',215,'Begijnendijk','7012'),(95,'Xerxes','Delgado','Bondgenotenlaan',198,'Leuven','1173'),(96,'Timothy','Summers','Mussenstraat',158,'Tienen','2843'),(97,'Ryan','Joyner','Martelarenplein',182,'Begijnendijk','2326'),(98,'Jacob','Cook','Ravenstraat',249,'Knokke-Heist','3745'),(99,'Thomas','Fuller','Parijsstraat',122,'Maldegem','7552'),(100,'Summer','Mathis','Mussenstraat',148,'Tienen','1694');
-
 ```
-
-
+### Recourse
+> https://www.generatedata.com/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjkzMzA3MTA3LDY2MzUzMjg5LC05NTUyND
-kxMDddfQ==
+eyJoaXN0b3J5IjpbMTI5ODAzMDE3Nyw2NjM1MzI4OSwtOTU1Mj
+Q5MTA3XX0=
 -->
