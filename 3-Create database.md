@@ -16,7 +16,10 @@ Als je een CREATE TABLE statement toevoegt in je CREATE script (na testen van di
 Zo ben je zeker dat de volgorde correct is. 
 Als je dan iets wil aanpassen in een tabel, pas dan ineens aan in het CREATE script en laat dan eerst het DROP script runnen en het volledige CREATE script. Zo ben je ook zeker dat er zich geen fouten voordoen (of kan je ze onmiddellijk oplossen)
 
-### Aanmaken van de tabbelen
+### Aanmaken van de tabellen
+
+> Run onderstaande code elke keer wanneer je een aanpassing gedaan hebt. 
+> Hierna run je ook de inserts opnieuw.
 ```
 CREATE TABLE IF NOT EXISTS R1TX32_team02.klanten (
   id INT NOT NULL,
@@ -208,8 +211,24 @@ CREATE TABLE IF NOT EXISTS R1TX32_team02.reservaties_has_zone (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION
     );
+
+CREATE TABLE IF NOT EXISTS R1TX32_team02.reservaties_has_arrangement (
+  reservatie INT NOT NULL,
+  arrangement INT NOT NULL,
+  PRIMARY KEY (reservatie, arrangement),
+  CONSTRAINT fk_reservaties_has_arrangement_reservaties1
+    FOREIGN KEY (reservatie)
+    REFERENCES R1TX32_team02.reservaties (reservatienummer)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT fk_reservaties_has_arrangement_arrangement1
+    FOREIGN KEY (arrangement)
+    REFERENCES R1TX32_team02.arrangement (id)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION
+    );
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3MjY2MTM1NiwyMDgxODUzNjM1LDE4Nz
-czOTE5MTldfQ==
+eyJoaXN0b3J5IjpbOTk5OTE1OTcxLDIwODE4NTM2MzUsMTg3Nz
+M5MTkxOV19
 -->
