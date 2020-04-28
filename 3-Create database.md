@@ -50,10 +50,42 @@ CREATE TABLE IF NOT EXISTS R1TX32_team02.bungalowtype (
   id INT NOT NULL,
   klasse text NULL,
   capaciteit INT NULL,
-  PRIMARY KEY (id))
-;
+  PRIMARY KEY (id)
+  );
+
+CREATE TABLE IF NOT EXISTS R1TX32_team02.zone (
+  id INT NOT NULL,
+  uitzicht text NULL,
+  nabijheid text NULL,
+  PRIMARY KEY (id)
+  );
+
+CREATE TABLE IF NOT EXISTS R1TX32_team02.bungalow (
+  bungalownummer INT NOT NULL,
+  ontruimd text NULL,
+  beschikbaarheid text NULL,
+  bungalowtype INT NOT NULL,
+  bungalowpark INT NOT NULL,
+  zone INT NOT NULL,
+  PRIMARY KEY (bungalownummer, bungalowtype, bungalowpark, zone),
+  CONSTRAINT fk_bungalow_bungalowtype1
+    FOREIGN KEY (bungalowtype)
+    REFERENCES R1TX32_team02.bungalowtype (id)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT fk_bungalow_bungalowpark1
+    FOREIGN KEY (bungalowpark)
+    REFERENCES R1TX32_team02.bungalowpark (id)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT fk_bungalow_zone1
+    FOREIGN KEY (zone)
+    REFERENCES R1TX32_team02.zone (id)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION
+    );
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTA0MDM5NjcsMjA4MTg1MzYzNSwxOD
-c3MzkxOTE5XX0=
+eyJoaXN0b3J5IjpbMTIxNzM4ODU0MiwyMDgxODUzNjM1LDE4Nz
+czOTE5MTldfQ==
 -->
