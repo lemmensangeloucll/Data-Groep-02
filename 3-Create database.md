@@ -84,8 +84,78 @@ CREATE TABLE IF NOT EXISTS R1TX32_team02.bungalow (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION
     );
+
+CREATE TABLE IF NOT EXISTS R1TX32_team02.reservaties (
+  reservatienummer INT NOT NULL DEFAULT NEXTVAL ('R1TX32_team02.reservaties_seq'),
+  contacttype text NOT NULL,
+  datum date NOT NULL DEFAULT current_timestamp(),
+  annulatieverzekering SMALLINT NULL,
+  bungalowpark INT NOT NULL,
+  periode INT NOT NULL,
+  bungalowtype INT NOT NULL,
+  klant INT NOT NULL,
+  bungalow INT NOT NULL,
+  res_status text NULL DEFAULT 'aanvraag',
+  PRIMARY KEY (reservatienummer, bungalowpark, periode, bungalowtype, klant, bungalow),
+  CONSTRAINT fk_reservaties_bungalowpark1
+    FOREIGN KEY (bungalowpark)
+    REFERENCES R1TX32_team02.bungalowpark (id)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT fk_reservaties_periode1
+    FOREIGN KEY (periode)
+    REFERENCES R1TX32_team02.periode (id)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT fk_reservaties_bungalowtype1
+    FOREIGN KEY (bungalowtype)
+    REFERENCES R1TX32_team02.bungalowtype (id)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT fk_reservaties_klanten1
+    FOREIGN KEY (klant)
+    REFERENCES R1TX32_team02.klanten (id)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT fk_reservaties_bungalow1
+    FOREIGN KEY (bungalow)
+    REFERENCES R1TX32_team02.bungalow (bungalownummer)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION
+    );
+
+CREATE TABLE IF NOT EXISTS R1TX32_team02.arrangement (
+  id INT NOT NULL,
+  diensten text NULL,
+  bijkomende prijs DECIMAL(6,2) NULL,
+  activiteiten text NULL,
+  PRIMARY KEY (id)
+  );
+  
+CREATE TABLE IF NOT EXISTS R1TX32_team02.faciliteiten (
+  id INT NOT NULL,
+  faciliteit text NULL,
+  PRIMARY KEY (id)
+  );
+
+CREATE TABLE IF NOT EXISTS R1TX32_team02.bungalowtype_has_faciliteiten (
+  bungalowtype INT NOT NULL,
+  faciliteit INT NOT NULL,
+  PRIMARY KEY (bungalowtype, faciliteit)
+ ,
+  CONSTRAINT fk_bungalowtype_has_faciliteiten_bungalowtype
+    FOREIGN KEY (bungalowtype)
+    REFERENCES R1TX32_team02.bungalowtype (id)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT fk_bungalowtype_has_faciliteiten_faciliteiten1
+    FOREIGN KEY (faciliteit)
+    REFERENCES R1TX32_team02.faciliteiten (id)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+;
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxNzM4ODU0MiwyMDgxODUzNjM1LDE4Nz
-czOTE5MTldfQ==
+eyJoaXN0b3J5IjpbLTExMzk2NDE3NTUsMjA4MTg1MzYzNSwxOD
+c3MzkxOTE5XX0=
 -->
