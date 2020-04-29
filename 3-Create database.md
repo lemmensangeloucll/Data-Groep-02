@@ -21,7 +21,7 @@ Als je dan iets wil aanpassen in een tabel, pas dan ineens aan in het CREATE scr
 > Run onderstaande code elke keer wanneer je een aanpassing gedaan hebt. 
 > Hierna run je ook de inserts opnieuw.
 ```
-CREATE TABLE IF NOT EXISTS klanten (
+CREATE TABLE klanten (
   id INT NOT NULL,
   voornaam text NOT NULL,
   achternaam text NOT NULL,
@@ -106,10 +106,10 @@ grant all on table bungalow TO "r0797739";
 grant all on table bungalow TO "r0753029";
 grant all on table bungalow TO "r0795520";
 
-CREATE TABLE IF NOT EXISTS reservaties (
-  reservatienummer INT NOT NULL DEFAULT NEXTVAL ('R1TX32_team02.reservaties_seq'),
+CREATE TABLE reservaties (
+  reservatienummer INT NOT NULL,
   contacttype text NOT NULL,
-  datum date NOT NULL DEFAULT current_timestamp(),
+  datum date NOT NULL,
   annulatieverzekering SMALLINT NULL,
   bungalowpark INT NOT NULL,
   periode INT NOT NULL,
@@ -271,6 +271,6 @@ grant all on table reservaties_has_arrangement TO "r0753029";
 grant all on table reservaties_has_arrangement TO "r0795520";
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTIwMDI3NjAsOTk5OTE1OTcxLDIwOD
-E4NTM2MzUsMTg3NzM5MTkxOV19
+eyJoaXN0b3J5IjpbMTYyODY2OTM4NywtMTgxMjAwMjc2MCw5OT
+k5MTU5NzEsMjA4MTg1MzYzNSwxODc3MzkxOTE5XX0=
 -->
