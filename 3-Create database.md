@@ -236,7 +236,7 @@ CREATE TABLE reservaties_has_zone (
   reservatie INT NOT NULL,
   zone INT NOT NULL,
   prijs DECIMAL(10,2) NULL,
-  PRIMARY KEY (reservatie, zone),
+  CONSTRAINT pk_reservatie_has_zone PRIMARY KEY (reservatie, zone),
   CONSTRAINT fk_reservaties_has_zone_reservaties1
     FOREIGN KEY (reservatie)
     REFERENCES reservaties (reservatienummer)
@@ -255,7 +255,7 @@ grant all on table reservaties_has_zone TO "r0795520";
 CREATE TABLE reservaties_has_arrangement (
   reservatie INT NOT NULL,
   arrangement INT NOT NULL,
-  PRIMARY KEY (reservatie, arrangement),
+  CONSTRAINT pk_reservaties_has_arrangement PRIMARY KEY (reservatie, arrangement),
   CONSTRAINT fk_reservaties_has_arrangement_reservaties1
     FOREIGN KEY (reservatie)
     REFERENCES reservaties (reservatienummer)
@@ -272,7 +272,7 @@ grant all on table reservaties_has_arrangement TO "r0753029";
 grant all on table reservaties_has_arrangement TO "r0795520";
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5NjM3NTE3NiwxMDM2MjczNjIyLC0yMT
-c1OTg1MDMsNTYzNzI4MDczLC0xODEyMDAyNzYwLDk5OTkxNTk3
-MSwyMDgxODUzNjM1LDE4NzczOTE5MTldfQ==
+eyJoaXN0b3J5IjpbNzIyMzYzODg5LDEwMzYyNzM2MjIsLTIxNz
+U5ODUwMyw1NjM3MjgwNzMsLTE4MTIwMDI3NjAsOTk5OTE1OTcx
+LDIwODE4NTM2MzUsMTg3NzM5MTkxOV19
 -->
