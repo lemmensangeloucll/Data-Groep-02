@@ -144,6 +144,9 @@ CREATE TABLE IF NOT EXISTS reservaties (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION
     );
+grant all on table reservaties TO "r0797739";
+grant all on table reservaties TO "r0753029";
+grant all on table reservaties TO "r0795520";
 
 CREATE TABLE IF NOT EXISTS arrangement (
   id INT NOT NULL,
@@ -152,12 +155,18 @@ CREATE TABLE IF NOT EXISTS arrangement (
   activiteiten text NULL,
   PRIMARY KEY (id)
   );
+grant all on table arrangement TO "r0797739";
+grant all on table arrangement TO "r0753029";
+grant all on table arrangement TO "r0795520";
   
 CREATE TABLE IF NOT EXISTS faciliteiten (
   id INT NOT NULL,
   faciliteit text NULL,
   PRIMARY KEY (id)
   );
+grant all on table faciliteiten TO "r0797739";
+grant all on table faciliteiten TO "r0753029";
+grant all on table faciliteiten TO "r0795520";
 
 CREATE TABLE IF NOT EXISTS bungalowtype_has_faciliteiten (
   bungalowtype INT NOT NULL,
@@ -174,6 +183,9 @@ CREATE TABLE IF NOT EXISTS bungalowtype_has_faciliteiten (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION
     );
+grant all on table bungalowtype_has_faciliteiten TO "r0797739";
+grant all on table bungalowtype_has_faciliteiten TO "r0753029";
+grant all on table bungalowtype_has_faciliteiten TO "r0795520";
 
 CREATE TABLE IF NOT EXISTS facturen (
   id INT NOT NULL,
@@ -191,6 +203,9 @@ CREATE TABLE IF NOT EXISTS facturen (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION
     );
+grant all on table facturen TO "r0797739";
+grant all on table facturen TO "r0753029";
+grant all on table facturen TO "r0795520";
 
 CREATE TABLE IF NOT EXISTS reparatie_aanvragen (
   aanvraagnummer INT NOT NULL,
@@ -212,6 +227,9 @@ CREATE TABLE IF NOT EXISTS reparatie_aanvragen (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION
     );
+grant all on table reparatie_aanvragen TO "r0797739";
+grant all on table reparatie_aanvragen TO "r0753029";
+grant all on table reparatie_aanvragen TO "r0795520";
 
 CREATE TABLE IF NOT EXISTS reservaties_has_zone (
   reservatie INT NOT NULL,
@@ -229,6 +247,9 @@ CREATE TABLE IF NOT EXISTS reservaties_has_zone (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION
     );
+grant all on table reservaties_has_zone TO "r0797739";
+grant all on table reservaties_has_zone TO "r0753029";
+grant all on table reservaties_has_zone TO "r0795520";
 
 CREATE TABLE IF NOT EXISTS reservaties_has_arrangement (
   reservatie INT NOT NULL,
@@ -245,8 +266,11 @@ CREATE TABLE IF NOT EXISTS reservaties_has_arrangement (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION
     );
+grant all on table reservaties_has_zone TO "r0797739";
+grant all on table reservaties_has_zone TO "r0753029";
+grant all on table reservaties_has_zone TO "r0795520";
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDIxNDIzODEsOTk5OTE1OTcxLDIwOD
-E4NTM2MzUsMTg3NzM5MTkxOV19
+eyJoaXN0b3J5IjpbLTMxMjc4OTA4NCw5OTk5MTU5NzEsMjA4MT
+g1MzYzNSwxODc3MzkxOTE5XX0=
 -->
