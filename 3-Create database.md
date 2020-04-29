@@ -99,7 +99,7 @@ CREATE TABLE bungalow (
   CONSTRAINT fk_bungalow_zone1
     FOREIGN KEY (zone)
     REFERENCES zone (id)
-    ON DELETE NO ACTION
+    ON DELETE RESTRICT
     ON UPDATE NO ACTION
     );
 grant all on table bungalow TO "r0797739";
@@ -271,7 +271,7 @@ grant all on table reservaties_has_arrangement TO "r0753029";
 grant all on table reservaties_has_arrangement TO "r0795520";
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNzU5ODUwMyw1NjM3MjgwNzMsLTE4MT
-IwMDI3NjAsOTk5OTE1OTcxLDIwODE4NTM2MzUsMTg3NzM5MTkx
-OV19
+eyJoaXN0b3J5IjpbMzg3NDk4MjMwLC0yMTc1OTg1MDMsNTYzNz
+I4MDczLC0xODEyMDAyNzYwLDk5OTkxNTk3MSwyMDgxODUzNjM1
+LDE4NzczOTE5MTldfQ==
 -->
