@@ -98,7 +98,7 @@ CREATE TABLE bungalow (
     ON UPDATE NO ACTION,
   CONSTRAINT fk_bungalow_zone1
     FOREIGN KEY (zone)
-    REFERENCES R1TX32_team02.zone (id)
+    REFERENCES zone (id)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION
     );
@@ -120,27 +120,27 @@ CREATE TABLE reservaties (
   PRIMARY KEY (reservatienummer, bungalowpark, periode, bungalowtype, klant, bungalow),
   CONSTRAINT fk_reservaties_bungalowpark1
     FOREIGN KEY (bungalowpark)
-    REFERENCES R1TX32_team02.bungalowpark (id)
+    REFERENCES bungalowpark (id)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT fk_reservaties_periode1
     FOREIGN KEY (periode)
-    REFERENCES R1TX32_team02.periode (id)
+    REFERENCES periode (id)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT fk_reservaties_bungalowtype1
     FOREIGN KEY (bungalowtype)
-    REFERENCES R1TX32_team02.bungalowtype (id)
+    REFERENCES bungalowtype (id)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT fk_reservaties_klanten1
     FOREIGN KEY (klant)
-    REFERENCES R1TX32_team02.klanten (id)
+    REFERENCES klanten (id)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT fk_reservaties_bungalow1
     FOREIGN KEY (bungalow)
-    REFERENCES R1TX32_team02.bungalow (bungalownummer)
+    REFERENCES bungalow (bungalownummer)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION
     );
@@ -174,12 +174,12 @@ CREATE TABLE bungalowtype_has_faciliteiten (
   PRIMARY KEY (bungalowtype, faciliteit),
   CONSTRAINT fk_bungalowtype_has_faciliteiten_bungalowtype
     FOREIGN KEY (bungalowtype)
-    REFERENCES R1TX32_team02.bungalowtype (id)
+    REFERENCES bungalowtype (id)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT fk_bungalowtype_has_faciliteiten_faciliteiten1
     FOREIGN KEY (faciliteit)
-    REFERENCES R1TX32_team02.faciliteiten (id)
+    REFERENCES faciliteiten (id)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION
     );
@@ -199,7 +199,7 @@ CREATE TABLE facturen (
   PRIMARY KEY (id, klant),
   CONSTRAINT fk_facturen_klanten1
     FOREIGN KEY (klant)
-    REFERENCES R1TX32_team02.klanten (id)
+    REFERENCES klanten (id)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION
     );
@@ -271,6 +271,6 @@ grant all on table reservaties_has_arrangement TO "r0753029";
 grant all on table reservaties_has_arrangement TO "r0795520";
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDEzNDE3NzMsLTE4MTIwMDI3NjAsOT
-k5OTE1OTcxLDIwODE4NTM2MzUsMTg3NzM5MTkxOV19
+eyJoaXN0b3J5IjpbMTc4MTQwNjM3MywtMTgxMjAwMjc2MCw5OT
+k5MTU5NzEsMjA4MTg1MzYzNSwxODc3MzkxOTE5XX0=
 -->
