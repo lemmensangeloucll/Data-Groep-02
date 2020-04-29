@@ -29,7 +29,7 @@ CREATE TABLE klanten (
   huisnummer text NOT NULL,
   gemeente text NOT NULL,
   postcode text NOT NULL,
-  PRIMARY KEY (id)
+  CONSTRAINT pk_klanten  PRIMARY KEY (id)
   );
 grant all on table klanten TO "r0797739";
 grant all on table klanten TO "r0753029";
@@ -153,7 +153,8 @@ CREATE TABLE arrangement (
   diensten text NULL,
   bijkomende_prijs DECIMAL(6,2) NULL,
   activiteiten text NULL,
-  CONSTRAINT pk_arrangement PRIMARY KEY (id)
+  CONSTRAINT pk_arrangement PRIMARY KEY (id),
+  CONSTRAINT check_prijs CHECK(bijkomende_prijs > 0)
   );
 grant all on table arrangement TO "r0797739";
 grant all on table arrangement TO "r0753029";
@@ -271,7 +272,7 @@ grant all on table reservaties_has_arrangement TO "r0753029";
 grant all on table reservaties_has_arrangement TO "r0795520";
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMzk2Nzc3NCwxMDM2MjczNjIyLC0yMT
-c1OTg1MDMsNTYzNzI4MDczLC0xODEyMDAyNzYwLDk5OTkxNTk3
-MSwyMDgxODUzNjM1LDE4NzczOTE5MTldfQ==
+eyJoaXN0b3J5IjpbLTEyNjcwMTkwMDIsMTAzNjI3MzYyMiwtMj
+E3NTk4NTAzLDU2MzcyODA3MywtMTgxMjAwMjc2MCw5OTk5MTU5
+NzEsMjA4MTg1MzYzNSwxODc3MzkxOTE5XX0=
 -->
