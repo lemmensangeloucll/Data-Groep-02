@@ -35,7 +35,7 @@ grant all on table klanten TO "r0797739";
 grant all on table klanten TO "r0753029";
 grant all on table klanten TO "r0795520";
 
-CREATE TABLE IF NOT EXISTS bungalowpark (
+CREATE TABLE bungalowpark (
   id INT NOT NULL,
   straat text NULL,
   huisnummer text NULL,
@@ -47,7 +47,7 @@ grant all on table bungalowpark TO "r0797739";
 grant all on table bungalowpark TO "r0753029";
 grant all on table bungalowpark TO "r0795520";
 
-CREATE TABLE IF NOT EXISTS periode (
+CREATE TABLE periode (
   id INT NOT NULL,
   duur text NULL,
   datum date NULL,
@@ -58,7 +58,7 @@ grant all on table periode TO "r0797739";
 grant all on table periode TO "r0753029";
 grant all on table periode TO "r0795520";
 
-CREATE TABLE IF NOT EXISTS bungalowtype (
+CREATE TABLE bungalowtype (
   id INT NOT NULL,
   klasse text NULL,
   capaciteit INT NULL,
@@ -68,7 +68,7 @@ grant all on table bungalowtype TO "r0797739";
 grant all on table bungalowtype TO "r0753029";
 grant all on table bungalowtype TO "r0795520";
 
-CREATE TABLE IF NOT EXISTS zone (
+CREATE TABLE zone (
   id INT NOT NULL,
   uitzicht text NULL,
   nabijheid text NULL,
@@ -78,7 +78,7 @@ grant all on table zone TO "r0797739";
 grant all on table zone TO "r0753029";
 grant all on table zone TO "r0795520";
 
-CREATE TABLE IF NOT EXISTS bungalow (
+CREATE TABLE bungalow (
   bungalownummer INT NOT NULL,
   ontruimd text NULL,
   beschikbaarheid text NULL,
@@ -148,7 +148,7 @@ grant all on table reservaties TO "r0797739";
 grant all on table reservaties TO "r0753029";
 grant all on table reservaties TO "r0795520";
 
-CREATE TABLE IF NOT EXISTS arrangement (
+CREATE TABLE arrangement (
   id INT NOT NULL,
   diensten text NULL,
   bijkomende prijs DECIMAL(6,2) NULL,
@@ -159,7 +159,7 @@ grant all on table arrangement TO "r0797739";
 grant all on table arrangement TO "r0753029";
 grant all on table arrangement TO "r0795520";
   
-CREATE TABLE IF NOT EXISTS faciliteiten (
+CREATE TABLE faciliteiten (
   id INT NOT NULL,
   faciliteit text NULL,
   PRIMARY KEY (id)
@@ -168,7 +168,7 @@ grant all on table faciliteiten TO "r0797739";
 grant all on table faciliteiten TO "r0753029";
 grant all on table faciliteiten TO "r0795520";
 
-CREATE TABLE IF NOT EXISTS bungalowtype_has_faciliteiten (
+CREATE TABLE bungalowtype_has_faciliteiten (
   bungalowtype INT NOT NULL,
   faciliteit INT NOT NULL,
   PRIMARY KEY (bungalowtype, faciliteit),
@@ -187,7 +187,7 @@ grant all on table bungalowtype_has_faciliteiten TO "r0797739";
 grant all on table bungalowtype_has_faciliteiten TO "r0753029";
 grant all on table bungalowtype_has_faciliteiten TO "r0795520";
 
-CREATE TABLE IF NOT EXISTS facturen (
+CREATE TABLE facturen (
   id INT NOT NULL,
   factuurnummer text NULL,
   beschrijving text NULL,
@@ -207,7 +207,7 @@ grant all on table facturen TO "r0797739";
 grant all on table facturen TO "r0753029";
 grant all on table facturen TO "r0795520";
 
-CREATE TABLE IF NOT EXISTS reparatie_aanvragen (
+CREATE TABLE reparatie_aanvragen (
   aanvraagnummer INT NOT NULL,
   tijdstip date NULL,
   prioriteit text NULL,
@@ -231,7 +231,7 @@ grant all on table reparatie_aanvragen TO "r0797739";
 grant all on table reparatie_aanvragen TO "r0753029";
 grant all on table reparatie_aanvragen TO "r0795520";
 
-CREATE TABLE IF NOT EXISTS reservaties_has_zone (
+CREATE TABLE reservaties_has_zone (
   reservatie INT NOT NULL,
   zone INT NOT NULL,
   prijs DECIMAL(10,2) NULL,
@@ -251,7 +251,7 @@ grant all on table reservaties_has_zone TO "r0797739";
 grant all on table reservaties_has_zone TO "r0753029";
 grant all on table reservaties_has_zone TO "r0795520";
 
-CREATE TABLE IF NOT EXISTS reservaties_has_arrangement (
+CREATE TABLE reservaties_has_arrangement (
   reservatie INT NOT NULL,
   arrangement INT NOT NULL,
   PRIMARY KEY (reservatie, arrangement),
@@ -271,6 +271,6 @@ grant all on table reservaties_has_arrangement TO "r0753029";
 grant all on table reservaties_has_arrangement TO "r0795520";
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyODY2OTM4NywtMTgxMjAwMjc2MCw5OT
-k5MTU5NzEsMjA4MTg1MzYzNSwxODc3MzkxOTE5XX0=
+eyJoaXN0b3J5IjpbMzIwNTA4NTk1LC0xODEyMDAyNzYwLDk5OT
+kxNTk3MSwyMDgxODUzNjM1LDE4NzczOTE5MTldfQ==
 -->
