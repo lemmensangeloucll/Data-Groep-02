@@ -151,7 +151,7 @@ grant all on table reservaties TO "r0795520";
 CREATE TABLE arrangement (
   id INT NOT NULL,
   diensten text NULL,
-  bijkomende prijs DECIMAL(6,2) NULL,
+  bijkomende_prijs DECIMAL(6,2) NULL,
   activiteiten text NULL,
   PRIMARY KEY (id)
   );
@@ -271,7 +271,7 @@ grant all on table reservaties_has_arrangement TO "r0753029";
 grant all on table reservaties_has_arrangement TO "r0795520";
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzNjI3MzYyMiwtMjE3NTk4NTAzLDU2Mz
-cyODA3MywtMTgxMjAwMjc2MCw5OTk5MTU5NzEsMjA4MTg1MzYz
-NSwxODc3MzkxOTE5XX0=
+eyJoaXN0b3J5IjpbMzM0NTI3MDYxLDEwMzYyNzM2MjIsLTIxNz
+U5ODUwMyw1NjM3MjgwNzMsLTE4MTIwMDI3NjAsOTk5OTE1OTcx
+LDIwODE4NTM2MzUsMTg3NzM5MTkxOV19
 -->
