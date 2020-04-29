@@ -139,8 +139,8 @@ CREATE TABLE reservaties (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT fk_reservaties_bungalow1
-    FOREIGN KEY (bungalow)
-    REFERENCES bungalow (bungalownummer)
+    FOREIGN KEY (bungalow, bungalowpark)
+    REFERENCES bungalow (bungalownummer, bungalowpark)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION
     );
@@ -271,6 +271,7 @@ grant all on table reservaties_has_arrangement TO "r0753029";
 grant all on table reservaties_has_arrangement TO "r0795520";
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTYzNzI4MDczLC0xODEyMDAyNzYwLDk5OT
-kxNTk3MSwyMDgxODUzNjM1LDE4NzczOTE5MTldfQ==
+eyJoaXN0b3J5IjpbMTk5MTE4NTIzMSw1NjM3MjgwNzMsLTE4MT
+IwMDI3NjAsOTk5OTE1OTcxLDIwODE4NTM2MzUsMTg3NzM5MTkx
+OV19
 -->
