@@ -85,7 +85,7 @@ CREATE TABLE bungalow (
   bungalowtype INT NOT NULL,
   bungalowpark INT NOT NULL,
   zone INT NOT NULL,
-  CONSTRAINT pk_bungalow  PRIMARY KEY (bungalownummer, bungalowpark),
+  CONSTRAINT pk_bungalow PRIMARY KEY (bungalownummer, bungalowpark),
   CONSTRAINT fk_bungalow_bungalowtype1
     FOREIGN KEY (bungalowtype)
     REFERENCES bungalowtype (id)
@@ -272,7 +272,7 @@ grant all on table reservaties_has_arrangement TO "r0753029";
 grant all on table reservaties_has_arrangement TO "r0795520";
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2OTQxNzMwOCwxMDM2MjczNjIyLC0yMT
+eyJoaXN0b3J5IjpbLTYxODI5MDY2MiwxMDM2MjczNjIyLC0yMT
 c1OTg1MDMsNTYzNzI4MDczLC0xODEyMDAyNzYwLDk5OTkxNTk3
 MSwyMDgxODUzNjM1LDE4NzczOTE5MTldfQ==
 -->
