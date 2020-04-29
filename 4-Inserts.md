@@ -14,6 +14,7 @@ INSERT INTO "klanten" (id,voornaam,achternaam,straatnaam,huisnummer,gemeente,pos
 ```
 ### Recourse
 > https://www.generatedata.com/
+> https://mockaroo.com
 #### Straatnamen
 ```
 Mussenstraat|Ravenstraat|Bondgenotenlaan|Martelarenplein|Parijsstraat|Urselweg|Kemmelbergstraat
