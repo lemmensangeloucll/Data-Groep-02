@@ -218,12 +218,12 @@ CREATE TABLE reparatie_aanvragen (
   PRIMARY KEY (aanvraagnummer, bungalow),
   CONSTRAINT fk_reparatie_aanvragen_klanten1
     FOREIGN KEY (klant)
-    REFERENCES R1TX32_team02.klanten (id)
+    REFERENCES klanten (id)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT fk_reparatie_aanvragen_bungalow1
     FOREIGN KEY (bungalow)
-    REFERENCES R1TX32_team02.bungalow (bungalownummer)
+    REFERENCES bungalow (bungalownummer)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION
     );
@@ -238,12 +238,12 @@ CREATE TABLE reservaties_has_zone (
   PRIMARY KEY (reservatie, zone),
   CONSTRAINT fk_reservaties_has_zone_reservaties1
     FOREIGN KEY (reservatie)
-    REFERENCES R1TX32_team02.reservaties (reservatienummer)
+    REFERENCES reservaties (reservatienummer)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT fk_reservaties_has_zone_zone1
     FOREIGN KEY (zone)
-    REFERENCES R1TX32_team02.zone (id)
+    REFERENCES zone (id)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION
     );
@@ -257,12 +257,12 @@ CREATE TABLE reservaties_has_arrangement (
   PRIMARY KEY (reservatie, arrangement),
   CONSTRAINT fk_reservaties_has_arrangement_reservaties1
     FOREIGN KEY (reservatie)
-    REFERENCES R1TX32_team02.reservaties (reservatienummer)
+    REFERENCES reservaties (reservatienummer)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT fk_reservaties_has_arrangement_arrangement1
     FOREIGN KEY (arrangement)
-    REFERENCES R1TX32_team02.arrangement (id)
+    REFERENCES arrangement (id)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION
     );
@@ -271,6 +271,6 @@ grant all on table reservaties_has_arrangement TO "r0753029";
 grant all on table reservaties_has_arrangement TO "r0795520";
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4MTQwNjM3MywtMTgxMjAwMjc2MCw5OT
-k5MTU5NzEsMjA4MTg1MzYzNSwxODc3MzkxOTE5XX0=
+eyJoaXN0b3J5IjpbNTYzNzI4MDczLC0xODEyMDAyNzYwLDk5OT
+kxNTk3MSwyMDgxODUzNjM1LDE4NzczOTE5MTldfQ==
 -->
