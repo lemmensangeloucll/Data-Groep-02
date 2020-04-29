@@ -117,7 +117,7 @@ CREATE TABLE reservaties (
   klant INT NOT NULL,
   bungalow INT NOT NULL,
   res_status text NULL DEFAULT 'aanvraag',
-  PRIMARY KEY (reservatienummer),
+  CONSTRAINT pk_reservaties PRIMARY KEY (reservatienummer),
   CONSTRAINT fk_reservaties_bungalowpark1
     FOREIGN KEY (bungalowpark)
     REFERENCES bungalowpark (id)
@@ -272,7 +272,7 @@ grant all on table reservaties_has_arrangement TO "r0753029";
 grant all on table reservaties_has_arrangement TO "r0795520";
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxODI5MDY2MiwxMDM2MjczNjIyLC0yMT
+eyJoaXN0b3J5IjpbMTU5NTYyNzg5MiwxMDM2MjczNjIyLC0yMT
 c1OTg1MDMsNTYzNzI4MDczLC0xODEyMDAyNzYwLDk5OTkxNTk3
 MSwyMDgxODUzNjM1LDE4NzczOTE5MTldfQ==
 -->
