@@ -9,7 +9,7 @@ grant all on schema "R1TX32_team02" TO "r???????";
 ```
 ### Het instellen van het correcte search path
 ```
-SET search_path TO R1TX32_team02;
+SET search_path TO "R1TX32_team02";
 ```
  > TIP!
 Als je een CREATE TABLE statement toevoegt in je CREATE script (na testen van dit statement), voeg dan ineens ook de DROP TABLE statement vooraan toe in je DROP script. 
@@ -21,7 +21,7 @@ Als je dan iets wil aanpassen in een tabel, pas dan ineens aan in het CREATE scr
 > Run onderstaande code elke keer wanneer je een aanpassing gedaan hebt. 
 > Hierna run je ook de inserts opnieuw.
 ```
-CREATE TABLE IF NOT EXISTS R1TX32_team02.klanten (
+CREATE TABLE IF NOT EXISTS klanten (
   id INT NOT NULL,
   voornaam text NOT NULL,
   achternaam text NOT NULL,
@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS R1TX32_team02.klanten (
   PRIMARY KEY (id)
   );
 
-CREATE TABLE IF NOT EXISTS R1TX32_team02.bungalowpark (
+CREATE TABLE IF NOT EXISTS bungalowpark (
   id INT NOT NULL,
   straat text NULL,
   huisnummer text NULL,
@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS R1TX32_team02.bungalowpark (
   PRIMARY KEY (id)
   );
 
-CREATE TABLE IF NOT EXISTS R1TX32_team02.periode (
+CREATE TABLE IF NOT EXISTS periode (
   id INT NOT NULL,
   duur text NULL,
   datum date NULL,
@@ -49,21 +49,21 @@ CREATE TABLE IF NOT EXISTS R1TX32_team02.periode (
   PRIMARY KEY (id)
   );
 
-CREATE TABLE IF NOT EXISTS R1TX32_team02.bungalowtype (
+CREATE TABLE IF NOT EXISTS bungalowtype (
   id INT NOT NULL,
   klasse text NULL,
   capaciteit INT NULL,
   PRIMARY KEY (id)
   );
 
-CREATE TABLE IF NOT EXISTS R1TX32_team02.zone (
+CREATE TABLE IF NOT EXISTS zone (
   id INT NOT NULL,
   uitzicht text NULL,
   nabijheid text NULL,
   PRIMARY KEY (id)
   );
 
-CREATE TABLE IF NOT EXISTS R1TX32_team02.bungalow (
+CREATE TABLE IF NOT EXISTS bungalow (
   bungalownummer INT NOT NULL,
   ontruimd text NULL,
   beschikbaarheid text NULL,
@@ -88,7 +88,7 @@ CREATE TABLE IF NOT EXISTS R1TX32_team02.bungalow (
     ON UPDATE NO ACTION
     );
 
-CREATE TABLE IF NOT EXISTS R1TX32_team02.reservaties (
+CREATE TABLE IF NOT EXISTS reservaties (
   reservatienummer INT NOT NULL DEFAULT NEXTVAL ('R1TX32_team02.reservaties_seq'),
   contacttype text NOT NULL,
   datum date NOT NULL DEFAULT current_timestamp(),
@@ -127,7 +127,7 @@ CREATE TABLE IF NOT EXISTS R1TX32_team02.reservaties (
     ON UPDATE NO ACTION
     );
 
-CREATE TABLE IF NOT EXISTS R1TX32_team02.arrangement (
+CREATE TABLE IF NOT EXISTS arrangement (
   id INT NOT NULL,
   diensten text NULL,
   bijkomende prijs DECIMAL(6,2) NULL,
@@ -135,13 +135,13 @@ CREATE TABLE IF NOT EXISTS R1TX32_team02.arrangement (
   PRIMARY KEY (id)
   );
   
-CREATE TABLE IF NOT EXISTS R1TX32_team02.faciliteiten (
+CREATE TABLE IF NOT EXISTS faciliteiten (
   id INT NOT NULL,
   faciliteit text NULL,
   PRIMARY KEY (id)
   );
 
-CREATE TABLE IF NOT EXISTS R1TX32_team02.bungalowtype_has_faciliteiten (
+CREATE TABLE IF NOT EXISTS bungalowtype_has_faciliteiten (
   bungalowtype INT NOT NULL,
   faciliteit INT NOT NULL,
   PRIMARY KEY (bungalowtype, faciliteit),
@@ -157,7 +157,7 @@ CREATE TABLE IF NOT EXISTS R1TX32_team02.bungalowtype_has_faciliteiten (
     ON UPDATE NO ACTION
     );
 
-CREATE TABLE IF NOT EXISTS R1TX32_team02.facturen (
+CREATE TABLE IF NOT EXISTS facturen (
   id INT NOT NULL,
   factuurnummer text NULL,
   beschrijving text NULL,
@@ -174,7 +174,7 @@ CREATE TABLE IF NOT EXISTS R1TX32_team02.facturen (
     ON UPDATE NO ACTION
     );
 
-CREATE TABLE IF NOT EXISTS R1TX32_team02.reparatie_aanvragen (
+CREATE TABLE IF NOT EXISTS reparatie_aanvragen (
   aanvraagnummer INT NOT NULL,
   tijdstip date NULL,
   prioriteit text NULL,
@@ -195,7 +195,7 @@ CREATE TABLE IF NOT EXISTS R1TX32_team02.reparatie_aanvragen (
     ON UPDATE NO ACTION
     );
 
-CREATE TABLE IF NOT EXISTS R1TX32_team02.reservaties_has_zone (
+CREATE TABLE IF NOT EXISTS reservaties_has_zone (
   reservatie INT NOT NULL,
   zone INT NOT NULL,
   prijs DECIMAL(10,2) NULL,
@@ -212,7 +212,7 @@ CREATE TABLE IF NOT EXISTS R1TX32_team02.reservaties_has_zone (
     ON UPDATE NO ACTION
     );
 
-CREATE TABLE IF NOT EXISTS R1TX32_team02.reservaties_has_arrangement (
+CREATE TABLE IF NOT EXISTS reservaties_has_arrangement (
   reservatie INT NOT NULL,
   arrangement INT NOT NULL,
   PRIMARY KEY (reservatie, arrangement),
@@ -229,6 +229,6 @@ CREATE TABLE IF NOT EXISTS R1TX32_team02.reservaties_has_arrangement (
     );
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk5OTE1OTcxLDIwODE4NTM2MzUsMTg3Nz
-M5MTkxOV19
+eyJoaXN0b3J5IjpbMTY4MzY5Nzg1MSw5OTk5MTU5NzEsMjA4MT
+g1MzYzNSwxODc3MzkxOTE5XX0=
 -->
