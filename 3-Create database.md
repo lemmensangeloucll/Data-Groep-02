@@ -266,11 +266,11 @@ CREATE TABLE IF NOT EXISTS reservaties_has_arrangement (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION
     );
-grant all on table reservaties_has_zone TO "r0797739";
-grant all on table reservaties_has_zone TO "r0753029";
-grant all on table reservaties_has_zone TO "r0795520";
+grant all on table reservaties_has_arrangement TO "r0797739";
+grant all on table reservaties_has_arrangement TO "r0753029";
+grant all on table reservaties_has_arrangement TO "r0795520";
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxMjc4OTA4NCw5OTk5MTU5NzEsMjA4MT
-g1MzYzNSwxODc3MzkxOTE5XX0=
+eyJoaXN0b3J5IjpbLTE4MTIwMDI3NjAsOTk5OTE1OTcxLDIwOD
+E4NTM2MzUsMTg3NzM5MTkxOV19
 -->
