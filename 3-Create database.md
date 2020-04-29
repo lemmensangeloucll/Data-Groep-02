@@ -163,7 +163,7 @@ grant all on table arrangement TO "r0795520";
 CREATE TABLE faciliteiten (
   id INT NOT NULL,
   faciliteit text NULL,
-  PRIMARY KEY (id)
+  CONSTRAINT pk_faciliteiten PRIMARY KEY (id)
   );
 grant all on table faciliteiten TO "r0797739";
 grant all on table faciliteiten TO "r0753029";
@@ -272,7 +272,7 @@ grant all on table reservaties_has_arrangement TO "r0753029";
 grant all on table reservaties_has_arrangement TO "r0795520";
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5NTYyNzg5MiwxMDM2MjczNjIyLC0yMT
-c1OTg1MDMsNTYzNzI4MDczLC0xODEyMDAyNzYwLDk5OTkxNTk3
-MSwyMDgxODUzNjM1LDE4NzczOTE5MTldfQ==
+eyJoaXN0b3J5IjpbLTE2NDE3MDg0NzQsMTAzNjI3MzYyMiwtMj
+E3NTk4NTAzLDU2MzcyODA3MywtMTgxMjAwMjc2MCw5OTk5MTU5
+NzEsMjA4MTg1MzYzNSwxODc3MzkxOTE5XX0=
 -->
