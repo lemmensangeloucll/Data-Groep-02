@@ -172,7 +172,7 @@ grant all on table faciliteiten TO "r0795520";
 CREATE TABLE bungalowtype_has_faciliteiten (
   bungalowtype INT NOT NULL,
   faciliteit INT NOT NULL,
-  PRIMARY KEY (bungalowtype, faciliteit),
+  CONSTRAINT pk_bungalowtype_has_faciliteiten PRIMARY KEY (bungalowtype, faciliteit),
   CONSTRAINT fk_bungalowtype_has_faciliteiten_bungalowtype
     FOREIGN KEY (bungalowtype)
     REFERENCES bungalowtype (id)
@@ -197,7 +197,7 @@ CREATE TABLE facturen (
   korting DECIMAL(10,2) NULL,
   totale_prijs DECIMAL(20,2) NULL,
   klant INT NOT NULL,
-  PRIMARY KEY (id, klant),
+  CONSTRAINT fk_facturen PRIMARY KEY (id, klant),
   CONSTRAINT fk_facturen_klanten1
     FOREIGN KEY (klant)
     REFERENCES klanten (id)
@@ -216,7 +216,7 @@ CREATE TABLE reparatie_aanvragen (
   vaardigheid text NULL,
   klant INT NOT NULL,
   bungalow INT NOT NULL,
-  PRIMARY KEY (aanvraagnummer, bungalow),
+  CONSTRAINT pk_reparatie_aanvragen PRIMARY KEY (aanvraagnummer, bungalow),
   CONSTRAINT fk_reparatie_aanvragen_klanten1
     FOREIGN KEY (klant)
     REFERENCES klanten (id)
@@ -272,7 +272,7 @@ grant all on table reservaties_has_arrangement TO "r0753029";
 grant all on table reservaties_has_arrangement TO "r0795520";
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDE3MDg0NzQsMTAzNjI3MzYyMiwtMj
-E3NTk4NTAzLDU2MzcyODA3MywtMTgxMjAwMjc2MCw5OTk5MTU5
-NzEsMjA4MTg1MzYzNSwxODc3MzkxOTE5XX0=
+eyJoaXN0b3J5IjpbMTc5NjM3NTE3NiwxMDM2MjczNjIyLC0yMT
+c1OTg1MDMsNTYzNzI4MDczLC0xODEyMDAyNzYwLDk5OTkxNTk3
+MSwyMDgxODUzNjM1LDE4NzczOTE5MTldfQ==
 -->
