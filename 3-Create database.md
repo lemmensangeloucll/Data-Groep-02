@@ -216,6 +216,7 @@ CREATE TABLE reparatie_aanvragen (
   vaardigheid text NULL,
   klant INT NOT NULL,
   bungalow INT NOT NULL,
+  bungalowpark INT NOT NULL,
   CONSTRAINT pk_reparatie_aanvragen PRIMARY KEY (aanvraagnummer),
   CONSTRAINT fk_reparatie_aanvragen_klanten1
     FOREIGN KEY (klant)
@@ -223,8 +224,8 @@ CREATE TABLE reparatie_aanvragen (
     ON DELETE RESTRICT
     ON UPDATE NO ACTION,
   CONSTRAINT fk_reparatie_aanvragen_bungalow1
-    FOREIGN KEY (bungalow)
-    REFERENCES bungalow (bungalownummer)
+    FOREIGN KEY (bungalow, bungalowpark)
+    REFERENCES bungalow (bungalownummer, bungalowpark)
     ON DELETE RESTRICT
     ON UPDATE NO ACTION
     );
@@ -272,7 +273,8 @@ grant all on table reservaties_has_arrangement TO "r0753029";
 grant all on table reservaties_has_arrangement TO "r0795520";
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2MDExOTAwNiw3MjIzNjM4ODksMTAzNj
-I3MzYyMiwtMjE3NTk4NTAzLDU2MzcyODA3MywtMTgxMjAwMjc2
-MCw5OTk5MTU5NzEsMjA4MTg1MzYzNSwxODc3MzkxOTE5XX0=
+eyJoaXN0b3J5IjpbMTg1MzM5NTk0MiwxNDYwMTE5MDA2LDcyMj
+M2Mzg4OSwxMDM2MjczNjIyLC0yMTc1OTg1MDMsNTYzNzI4MDcz
+LC0xODEyMDAyNzYwLDk5OTkxNTk3MSwyMDgxODUzNjM1LDE4Nz
+czOTE5MTldfQ==
 -->
