@@ -29,7 +29,7 @@ CREATE TABLE klanten (
   huisnummer text NOT NULL,
   gemeente text NOT NULL,
   postcode text NOT NULL,
-  CONSTRAINT pk_klanten  PRIMARY KEY (id)
+  CONSTRAINT pk_klanten PRIMARY KEY (id)
   );
 grant all on table klanten TO "r0797739";
 grant all on table klanten TO "r0753029";
@@ -41,7 +41,7 @@ CREATE TABLE bungalowpark (
   huisnummer text NULL,
   postcode text NULL,
   gemeente text NULL,
-  PRIMARY KEY (id)
+  CONSTRAINT pk_bungalowpark PRIMARY KEY (id)
   );
 grant all on table bungalowpark TO "r0797739";
 grant all on table bungalowpark TO "r0753029";
@@ -52,7 +52,7 @@ CREATE TABLE periode (
   duur text NULL,
   datum date NULL,
   seizoen text NULL,
-  PRIMARY KEY (id)
+  CONSTRAINT pk_periode PRIMARY KEY (id)
   );
 grant all on table periode TO "r0797739";
 grant all on table periode TO "r0753029";
@@ -62,7 +62,7 @@ CREATE TABLE bungalowtype (
   id INT NOT NULL,
   klasse text NULL,
   capaciteit INT NULL,
-  PRIMARY KEY (id)
+  CONSTRAINT pk_bungalowtype PRIMARY KEY (id)
   );
 grant all on table bungalowtype TO "r0797739";
 grant all on table bungalowtype TO "r0753029";
@@ -72,7 +72,7 @@ CREATE TABLE zone (
   id INT NOT NULL,
   uitzicht text NULL,
   nabijheid text NULL,
-  PRIMARY KEY (id)
+  CONSTRAINT pk_zone PRIMARY KEY (id)
   );
 grant all on table zone TO "r0797739";
 grant all on table zone TO "r0753029";
@@ -85,7 +85,7 @@ CREATE TABLE bungalow (
   bungalowtype INT NOT NULL,
   bungalowpark INT NOT NULL,
   zone INT NOT NULL,
-  PRIMARY KEY (bungalownummer, bungalowpark),
+  CONSTRAINT pk_bungalow  PRIMARY KEY (bungalownummer, bungalowpark),
   CONSTRAINT fk_bungalow_bungalowtype1
     FOREIGN KEY (bungalowtype)
     REFERENCES bungalowtype (id)
@@ -272,7 +272,7 @@ grant all on table reservaties_has_arrangement TO "r0753029";
 grant all on table reservaties_has_arrangement TO "r0795520";
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjcwMTkwMDIsMTAzNjI3MzYyMiwtMj
-E3NTk4NTAzLDU2MzcyODA3MywtMTgxMjAwMjc2MCw5OTk5MTU5
-NzEsMjA4MTg1MzYzNSwxODc3MzkxOTE5XX0=
+eyJoaXN0b3J5IjpbLTI2OTQxNzMwOCwxMDM2MjczNjIyLC0yMT
+c1OTg1MDMsNTYzNzI4MDczLC0xODEyMDAyNzYwLDk5OTkxNTk3
+MSwyMDgxODUzNjM1LDE4NzczOTE5MTldfQ==
 -->
