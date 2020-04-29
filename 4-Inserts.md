@@ -21,11 +21,23 @@ INSERT INTO "klanten" (id,voornaam,achternaam,straatnaam,huisnummer,gemeente,pos
 We gaan er vanuit dat het aantal, 
 
 reservaties mogelijk == 100 000
+
+
 contacttype == telefonisch, email, on-site
+
+
 bungalowparken == 8
+
+
 periodes == 4
+
+
 bungalowtypes == 4
+
+
 klanten == 100 000
+
+
 bungalows == 15
 
 
