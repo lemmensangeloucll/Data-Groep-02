@@ -1,4 +1,8 @@
 ## Drop
+### Set search path
+```
+SET search_path TO "R1TX32_team02";
+```
 ### Het dropppen van alle tabellen
 ```
 drop table reservaties_has_arrangement;
@@ -13,11 +17,9 @@ drop table bungalow;
 drop table zone;
 drop table bungalowtype;
 drop table periode;
-drop table bungal;
-drop table ;
-drop table ;
-drop table ;
+drop table bungalowpark;
+drop table klanten;
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5OTEzOTA2M119
+eyJoaXN0b3J5IjpbMzgzNTUzNTJdfQ==
 -->
