@@ -4,8 +4,12 @@
 ```
 CREATE SCHEMA R1TX32_team02;
 grant all on schema "R1TX32_team02" TO "r0797739";
-grant all on schema "R1TX32_team02" TO "r???????";
-grant all on schema "R1TX32_team02" TO "r???????";
+grant all on schema "R1TX32_team02" TO "r0753029";
+grant all on schema "R1TX32_team02" TO "r0795";
+
+grant all on table klanten TO "r0797739";
+grant all on table klanten TO "r0797739";
+grant all on table klanten TO "r0797739";
 ```
 ### Het instellen van het correcte search path
 ```
@@ -229,6 +233,6 @@ CREATE TABLE IF NOT EXISTS reservaties_has_arrangement (
     );
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4MzY5Nzg1MSw5OTk5MTU5NzEsMjA4MT
+eyJoaXN0b3J5IjpbMTAwMDI2MjY4OSw5OTk5MTU5NzEsMjA4MT
 g1MzYzNSwxODc3MzkxOTE5XX0=
 -->
