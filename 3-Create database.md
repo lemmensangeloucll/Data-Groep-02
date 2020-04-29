@@ -85,7 +85,7 @@ CREATE TABLE bungalow (
   bungalowtype INT NOT NULL,
   bungalowpark INT NOT NULL,
   zone INT NOT NULL,
-  PRIMARY KEY (bungalownummer, bungalowtype, bungalowpark, zone),
+  PRIMARY KEY (bungalownummer, bungalowpark),
   CONSTRAINT fk_bungalow_bungalowtype1
     FOREIGN KEY (bungalowtype)
     REFERENCES bungalowtype (id)
@@ -117,31 +117,31 @@ CREATE TABLE reservaties (
   klant INT NOT NULL,
   bungalow INT NOT NULL,
   res_status text NULL DEFAULT 'aanvraag',
-  PRIMARY KEY (reservatienummer, bungalowpark, periode, bungalowtype, klant, bungalow),
+  PRIMARY KEY (reservatienummer),
   CONSTRAINT fk_reservaties_bungalowpark1
     FOREIGN KEY (bungalowpark)
     REFERENCES bungalowpark (id)
-    ON DELETE NO ACTION
+    ON DELETE RESTRICT
     ON UPDATE NO ACTION,
   CONSTRAINT fk_reservaties_periode1
     FOREIGN KEY (periode)
     REFERENCES periode (id)
-    ON DELETE NO ACTION
+    ON DELETE RESTRICT
     ON UPDATE NO ACTION,
   CONSTRAINT fk_reservaties_bungalowtype1
     FOREIGN KEY (bungalowtype)
     REFERENCES bungalowtype (id)
-    ON DELETE NO ACTION
+    ON DELETE RESTRICT
     ON UPDATE NO ACTION,
   CONSTRAINT fk_reservaties_klanten1
     FOREIGN KEY (klant)
     REFERENCES klanten (id)
-    ON DELETE NO ACTION
+    ON DELETE RESTRICT
     ON UPDATE NO ACTION,
   CONSTRAINT fk_reservaties_bungalow1
     FOREIGN KEY (bungalow, bungalowpark)
     REFERENCES bungalow (bungalownummer, bungalowpark)
-    ON DELETE NO ACTION
+    ON DELETE RESTRICT
     ON UPDATE NO ACTION
     );
 grant all on table reservaties TO "r0797739";
@@ -175,12 +175,12 @@ CREATE TABLE bungalowtype_has_faciliteiten (
   CONSTRAINT fk_bungalowtype_has_faciliteiten_bungalowtype
     FOREIGN KEY (bungalowtype)
     REFERENCES bungalowtype (id)
-    ON DELETE NO ACTION
+    ON DELETE RESTRICT
     ON UPDATE NO ACTION,
   CONSTRAINT fk_bungalowtype_has_faciliteiten_faciliteiten1
     FOREIGN KEY (faciliteit)
     REFERENCES faciliteiten (id)
-    ON DELETE NO ACTION
+    ON DELETE RESTRICT
     ON UPDATE NO ACTION
     );
 grant all on table bungalowtype_has_faciliteiten TO "r0797739";
@@ -200,7 +200,7 @@ CREATE TABLE facturen (
   CONSTRAINT fk_facturen_klanten1
     FOREIGN KEY (klant)
     REFERENCES klanten (id)
-    ON DELETE NO ACTION
+    ON DELETE RESTRICT
     ON UPDATE NO ACTION
     );
 grant all on table facturen TO "r0797739";
@@ -219,12 +219,12 @@ CREATE TABLE reparatie_aanvragen (
   CONSTRAINT fk_reparatie_aanvragen_klanten1
     FOREIGN KEY (klant)
     REFERENCES klanten (id)
-    ON DELETE NO ACTION
+    ON DELETE RESTRICT
     ON UPDATE NO ACTION,
   CONSTRAINT fk_reparatie_aanvragen_bungalow1
     FOREIGN KEY (bungalow)
     REFERENCES bungalow (bungalownummer)
-    ON DELETE NO ACTION
+    ON DELETE RESTRICT
     ON UPDATE NO ACTION
     );
 grant all on table reparatie_aanvragen TO "r0797739";
@@ -239,12 +239,12 @@ CREATE TABLE reservaties_has_zone (
   CONSTRAINT fk_reservaties_has_zone_reservaties1
     FOREIGN KEY (reservatie)
     REFERENCES reservaties (reservatienummer)
-    ON DELETE NO ACTION
+    ON DELETE RESTRICT
     ON UPDATE NO ACTION,
   CONSTRAINT fk_reservaties_has_zone_zone1
     FOREIGN KEY (zone)
     REFERENCES zone (id)
-    ON DELETE NO ACTION
+    ON DELETE RESTRICT
     ON UPDATE NO ACTION
     );
 grant all on table reservaties_has_zone TO "r0797739";
@@ -258,12 +258,12 @@ CREATE TABLE reservaties_has_arrangement (
   CONSTRAINT fk_reservaties_has_arrangement_reservaties1
     FOREIGN KEY (reservatie)
     REFERENCES reservaties (reservatienummer)
-    ON DELETE NO ACTION
+    ON DELETE RESTRICT
     ON UPDATE NO ACTION,
   CONSTRAINT fk_reservaties_has_arrangement_arrangement1
     FOREIGN KEY (arrangement)
     REFERENCES arrangement (id)
-    ON DELETE NO ACTION
+    ON DELETE RESTRICT
     ON UPDATE NO ACTION
     );
 grant all on table reservaties_has_arrangement TO "r0797739";
@@ -271,7 +271,7 @@ grant all on table reservaties_has_arrangement TO "r0753029";
 grant all on table reservaties_has_arrangement TO "r0795520";
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5MTE4NTIzMSw1NjM3MjgwNzMsLTE4MT
+eyJoaXN0b3J5IjpbLTIxNzU5ODUwMyw1NjM3MjgwNzMsLTE4MT
 IwMDI3NjAsOTk5OTE1OTcxLDIwODE4NTM2MzUsMTg3NzM5MTkx
 OV19
 -->
