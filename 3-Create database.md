@@ -197,7 +197,7 @@ CREATE TABLE facturen (
   korting DECIMAL(10,2) NULL,
   totale_prijs DECIMAL(20,2) NULL,
   klant INT NOT NULL,
-  CONSTRAINT fk_facturen PRIMARY KEY (id, klant),
+  CONSTRAINT fk_facturen PRIMARY KEY (id),
   CONSTRAINT fk_facturen_klanten1
     FOREIGN KEY (klant)
     REFERENCES klanten (id)
@@ -216,7 +216,7 @@ CREATE TABLE reparatie_aanvragen (
   vaardigheid text NULL,
   klant INT NOT NULL,
   bungalow INT NOT NULL,
-  CONSTRAINT pk_reparatie_aanvragen PRIMARY KEY (aanvraagnummer, bungalow),
+  CONSTRAINT pk_reparatie_aanvragen PRIMARY KEY (aanvraagnummer),
   CONSTRAINT fk_reparatie_aanvragen_klanten1
     FOREIGN KEY (klant)
     REFERENCES klanten (id)
@@ -272,7 +272,7 @@ grant all on table reservaties_has_arrangement TO "r0753029";
 grant all on table reservaties_has_arrangement TO "r0795520";
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzIyMzYzODg5LDEwMzYyNzM2MjIsLTIxNz
-U5ODUwMyw1NjM3MjgwNzMsLTE4MTIwMDI3NjAsOTk5OTE1OTcx
-LDIwODE4NTM2MzUsMTg3NzM5MTkxOV19
+eyJoaXN0b3J5IjpbMTQ2MDExOTAwNiw3MjIzNjM4ODksMTAzNj
+I3MzYyMiwtMjE3NTk4NTAzLDU2MzcyODA3MywtMTgxMjAwMjc2
+MCw5OTk5MTU5NzEsMjA4MTg1MzYzNSwxODc3MzkxOTE5XX0=
 -->
