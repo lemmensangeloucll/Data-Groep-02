@@ -5,11 +5,7 @@
 CREATE SCHEMA R1TX32_team02;
 grant all on schema "R1TX32_team02" TO "r0797739";
 grant all on schema "R1TX32_team02" TO "r0753029";
-grant all on schema "R1TX32_team02" TO "r0795";
-
-grant all on table klanten TO "r0797739";
-grant all on table klanten TO "r0797739";
-grant all on table klanten TO "r0797739";
+grant all on schema "R1TX32_team02" TO "r0795520";
 ```
 ### Het instellen van het correcte search path
 ```
@@ -35,6 +31,9 @@ CREATE TABLE IF NOT EXISTS klanten (
   postcode text NOT NULL,
   PRIMARY KEY (id)
   );
+grant all on table klanten TO "r0797739";
+grant all on table klanten TO "r0753029";
+grant all on table klanten TO "r0795520";
 
 CREATE TABLE IF NOT EXISTS bungalowpark (
   id INT NOT NULL,
@@ -44,6 +43,9 @@ CREATE TABLE IF NOT EXISTS bungalowpark (
   gemeente text NULL,
   PRIMARY KEY (id)
   );
+grant all on table bungalowpark TO "r0797739";
+grant all on table bungalowpark TO "r0753029";
+grant all on table bungalowpark TO "r0795520";
 
 CREATE TABLE IF NOT EXISTS periode (
   id INT NOT NULL,
@@ -52,6 +54,9 @@ CREATE TABLE IF NOT EXISTS periode (
   seizoen text NULL,
   PRIMARY KEY (id)
   );
+grant all on table periode TO "r0797739";
+grant all on table periode TO "r0753029";
+grant all on table periode TO "r0795520";
 
 CREATE TABLE IF NOT EXISTS bungalowtype (
   id INT NOT NULL,
@@ -59,6 +64,9 @@ CREATE TABLE IF NOT EXISTS bungalowtype (
   capaciteit INT NULL,
   PRIMARY KEY (id)
   );
+grant all on table bungalowtype TO "r0797739";
+grant all on table bungalowtype TO "r0753029";
+grant all on table bungalowtype TO "r0795520";
 
 CREATE TABLE IF NOT EXISTS zone (
   id INT NOT NULL,
@@ -66,6 +74,9 @@ CREATE TABLE IF NOT EXISTS zone (
   nabijheid text NULL,
   PRIMARY KEY (id)
   );
+grant all on table zone TO "r0797739";
+grant all on table zone TO "r0753029";
+grant all on table zone TO "r0795520";
 
 CREATE TABLE IF NOT EXISTS bungalow (
   bungalownummer INT NOT NULL,
@@ -91,6 +102,9 @@ CREATE TABLE IF NOT EXISTS bungalow (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION
     );
+grant all on table bungalow TO "r0797739";
+grant all on table bungalow TO "r0753029";
+grant all on table bungalow TO "r0795520";
 
 CREATE TABLE IF NOT EXISTS reservaties (
   reservatienummer INT NOT NULL DEFAULT NEXTVAL ('R1TX32_team02.reservaties_seq'),
@@ -233,6 +247,6 @@ CREATE TABLE IF NOT EXISTS reservaties_has_arrangement (
     );
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwMDI2MjY4OSw5OTk5MTU5NzEsMjA4MT
-g1MzYzNSwxODc3MzkxOTE5XX0=
+eyJoaXN0b3J5IjpbLTE1NDIxNDIzODEsOTk5OTE1OTcxLDIwOD
+E4NTM2MzUsMTg3NzM5MTkxOV19
 -->
