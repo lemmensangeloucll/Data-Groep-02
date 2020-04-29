@@ -14,7 +14,21 @@ INSERT INTO "klanten" (id,voornaam,achternaam,straatnaam,huisnummer,gemeente,pos
 ```
 ### Recourse
 > https://www.generatedata.com/
+
+
 > https://mockaroo.com
+
+We gaan er vanuit dat het aantal, 
+
+reservaties mogelijk == 100 000
+contacttype == telefonisch, email, on-site
+bungalowparken == 8
+periodes == 4
+bungalowtypes == 4
+klanten == 100 000
+bungalows == 15
+
+
 #### Straatnamen
 ```
 Mussenstraat|Ravenstraat|Bondgenotenlaan|Martelarenplein|Parijsstraat|Urselweg|Kemmelbergstraat
