@@ -6,10 +6,13 @@
 
 > https://mockaroo.com
 
+### Aantallen voor de database structuur
 
-We gaan er vanuit dat het aantal, 
-
-reservaties mogelijk == 100 000
+> Aantal reservaties -> 100 000
+> Contacttypes -> 3 (telefonisch, email, on-site)
+> Bungalowparken -> 8
+> Periodes -> 4
+> 
 
 
 contacttype == telefonisch, email, on-site
@@ -39,6 +42,6 @@ Mussenstraat|Ravenstraat|Bondgenotenlaan|Martelarenplein|Parijsstraat|Urselweg|K
 Leuven|Knokke-Heist|Kessel-lo|Maldegem|Wilsele|Tienen|Tielt-Winge|Diest|Begijnendijk|Geetbets
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5NDQzNzEyNSwtNTQ0NTgwMDgzLDE4NT
-QzNTI0MjksNjYzNTMyODksLTk1NTI0OTEwN119
+eyJoaXN0b3J5IjpbLTEzOTQzMDk5NjksLTU0NDU4MDA4MywxOD
+U0MzUyNDI5LDY2MzUzMjg5LC05NTUyNDkxMDddfQ==
 -->
