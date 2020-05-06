@@ -675,9 +675,9 @@ insert into reparatie_aanvragen (aanvraagnummer, tijdstip, prioriteit, beschrijv
 insert into reparatie_aanvragen (aanvraagnummer, tijdstip, prioriteit, beschrijving, vaardigheid, klant, bungalow, bungalowpark) values (299, '2020-01-08 09:02:21', 'Laag', 'Lamp stuk', 'Elektricien', 177, 8, 2);
 insert into reparatie_aanvragen (aanvraagnummer, tijdstip, prioriteit, beschrijving, vaardigheid, klant, bungalow, bungalowpark) values (300, '2019-10-12 02:13:17', 'Laag', 'Geen wifi', 'Andere', 62, 2, 6);
 ```
-
+#
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzUxMjc3NDYsODg1NTQzMTM0LDcwNj
-gxMDc3LC00OTUwNzkxNDMsLTU0NDU4MDA4MywxODU0MzUyNDI5
-LDY2MzUzMjg5LC05NTUyNDkxMDddfQ==
+eyJoaXN0b3J5IjpbOTc1NDg2ODY3LC0xMjM1MTI3NzQ2LDg4NT
+U0MzEzNCw3MDY4MTA3NywtNDk1MDc5MTQzLC01NDQ1ODAwODMs
+MTg1NDM1MjQyOSw2NjM1MzI4OSwtOTU1MjQ5MTA3XX0=
 -->
