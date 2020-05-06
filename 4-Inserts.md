@@ -9,11 +9,17 @@
 ### Aantallen voor de database structuur
 
 > Aantal reservaties -> 100 000
+
 > Contacttypes -> 3 (telefonisch, email, on-site)
+
 > Bungalowparken -> 8
+
 > Periodes -> 4
+
 > Bungalowtypes -> 4
+
 > Klanten -> 100 000
+
 > Bungalows -> 15
 
 ### Straatnamen
@@ -40,6 +46,7 @@ INSERT INTO "klanten" (id,voornaam,achternaam,straatnaam,huisnummer,gemeente,pos
 INSERT INTO "klanten" (id,voornaam,achternaam,straatnaam,huisnummer,gemeente,postcode) VALUES (91,'Madaline','Barlow','Urselweg',22,'Geetbets','7724'),(92,'Russell','Maxwell','Bondgenotenlaan',151,'Tienen','4452'),(93,'Slade','Rodriguez','Parijsstraat',230,'Knokke-Heist','8316'),(94,'Halee','Valdez','Urselweg',215,'Begijnendijk','7012'),(95,'Xerxes','Delgado','Bondgenotenlaan',198,'Leuven','1173'),(96,'Timothy','Summers','Mussenstraat',158,'Tienen','2843'),(97,'Ryan','Joyner','Martelarenplein',182,'Begijnendijk','2326'),(98,'Jacob','Cook','Ravenstraat',249,'Knokke-Heist','3745'),(99,'Thomas','Fuller','Parijsstraat',122,'Maldegem','7552'),(100,'Summer','Mathis','Mussenstraat',148,'Tienen','1694');
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5NTA3OTE0MywtNTQ0NTgwMDgzLDE4NT
-QzNTI0MjksNjYzNTMyODksLTk1NTI0OTEwN119
+eyJoaXN0b3J5IjpbNzA2ODEwNzcsLTQ5NTA3OTE0MywtNTQ0NT
+gwMDgzLDE4NTQzNTI0MjksNjYzNTMyODksLTk1NTI0OTEwN119
+
 -->
