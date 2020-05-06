@@ -22,6 +22,10 @@
 
 > Bungalows -> 15
 
+> huisnummer -> 500
+
+>postcode -> 1000 -> 9999
+
 ### Straatnamen
 ```
 Mussenstraat|Ravenstraat|Bondgenotenlaan|Martelarenplein|Parijsstraat|Urselweg|Kemmelbergstraat
