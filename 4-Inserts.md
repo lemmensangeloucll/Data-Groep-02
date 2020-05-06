@@ -30,9 +30,15 @@
 ```
 Mussenstraat|Ravenstraat|Bondgenotenlaan|Martelarenplein|Parijsstraat|Urselweg|Kemmelbergstraat
 ```
+```
+Mussenstraat,Ravenstraat,Bondgenotenlaan,Martelarenplein,Parijsstraat,Urselweg,Kemmelbergstraat
+```
 ### Gemeentes
 ```
 Leuven|Knokke-Heist|Kessel-lo|Maldegem|Wilsele|Tienen|Tielt-Winge|Diest|Begijnendijk|Geetbets
+```
+```
+Leuven,Knokke-Heist,Kessel-lo,Maldegem,Wilsele,Tienen,Tielt-Winge,Diest,Begijnendijk,Geetbets
 ```
 
 ## Inserts
@@ -1872,8 +1878,8 @@ insert into reservaties_has_arrangement (reservatie, arrangement) values (159, 2
 insert into reservaties_has_arrangement (reservatie, arrangement) values (112, 298);
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1NjUyMTg1MywtMTU4OTE1MDg4NywtMT
-IzNTEyNzc0Niw4ODU1NDMxMzQsNzA2ODEwNzcsLTQ5NTA3OTE0
-MywtNTQ0NTgwMDgzLDE4NTQzNTI0MjksNjYzNTMyODksLTk1NT
-I0OTEwN119
+eyJoaXN0b3J5IjpbLTg5MzgyNDg0LC0yNTY1MjE4NTMsLTE1OD
+kxNTA4ODcsLTEyMzUxMjc3NDYsODg1NTQzMTM0LDcwNjgxMDc3
+LC00OTUwNzkxNDMsLTU0NDU4MDA4MywxODU0MzUyNDI5LDY2Mz
+UzMjg5LC05NTUyNDkxMDddfQ==
 -->
