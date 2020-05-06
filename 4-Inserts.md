@@ -366,6 +366,15 @@ insert into bungalowpark (id, straat, huisnummer, postcode, gemeente) values (8,
 insert into bungalowpark (id, straat, huisnummer, postcode, gemeente) values (7, 'Bondgenotenlaan', 204, 6416, 'Tielt-Winge');
 
 ```
+
+### periode
+```
+
+
+```
+
+
+
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbODg1NTQzMTM0LDcwNjgxMDc3LC00OTUwNz
 kxNDMsLTU0NDU4MDA4MywxODU0MzUyNDI5LDY2MzUzMjg5LC05
