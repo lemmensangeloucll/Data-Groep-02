@@ -1974,6 +1974,136 @@ insert into reservaties_has_zone (reservatie, zone, prijs) values (208, 4, 581.6
 insert into reservaties_has_zone (reservatie, zone, prijs) values (281, 5, 2077.96);
 insert into reservaties_has_zone (reservatie, zone, prijs) values (210, 7, 2874.5);
 ```
+### Bungalow
+```
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (1, true, true, 4, 1, 4);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (2, false, false, 2, 1, 4);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (3, false, false, 3, 1, 3);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (4, false, false, 2, 1, 2);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (5, false, false, 2, 1, 2);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (6, true, false, 4, 1, 1);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (7, false, false, 1, 1, 3);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (8, false, true, 4, 1, 4);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (9, false, false, 2, 1, 1);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (10, false, true, 2, 1, 4);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (11, true, false, 3, 1, 3);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (12, true, false, 2, 1, 1);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (13, true, true, 3, 1, 4);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (14, true, false, 1, 1, 4);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (15, false, false, 4, 1, 2);
+
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (1, true, true, 4, 1, 4);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (2, false, false, 2, 1, 4);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (3, false, false, 3, 1, 3);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (4, false, false, 2, 1, 2);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (5, false, false, 2, 1, 2);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (6, true, false, 4, 1, 1);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (7, false, false, 1, 1, 3);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (8, false, true, 4, 1, 4);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (9, false, false, 2, 1, 1);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (10, false, true, 2, 1, 4);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (11, true, false, 3, 1, 3);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (12, true, false, 2, 1, 1);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (13, true, true, 3, 1, 4);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (14, true, false, 1, 1, 4);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (15, false, false, 4, 1, 2);
+
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (1, false, true, 2, 3, 1);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (2, false, false, 1, 3, 1);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (3, false, false, 2, 3, 2);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (4, false, true, 4, 3, 4);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (5, false, true, 1, 3, 1);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (6, true, true, 4, 3, 3);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (7, true, false, 2, 3, 1);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (8, false, true, 2, 3, 1);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (9, true, true, 3, 3, 3);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (10, false, true, 1, 3, 1);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (11, false, true, 2, 3, 3);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (12, false, false, 4, 3, 1);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (13, false, false, 4, 3, 1);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (14, true, false, 3, 3, 2);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (15, true, false, 4, 3, 3);
+
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (1, true, true, 2, 4, 4);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (2, false, true, 1, 4, 1);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (3, true, true, 4, 4, 1);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (4, true, true, 3, 4, 1);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (5, false, true, 1, 4, 1);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (6, true, true, 1, 4, 4);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (7, true, false, 3, 4, 2);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (8, false, false, 3, 4, 2);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (9, true, true, 1, 4, 3);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (10, true, true, 2, 4, 4);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (11, false, true, 3, 4, 3);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (12, true, false, 4, 4, 2);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (13, true, false, 2, 4, 1);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (14, true, true, 4, 4, 1);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (15, false, true, 3, 4, 3);
+
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (1, false, false, 2, 5, 4);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (2, true, false, 2, 5, 1);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (3, false, false, 3, 5, 2);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (4, true, true, 3, 5, 2);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (5, true, false, 3, 5, 1);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (6, true, true, 3, 5, 1);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (7, true, true, 2, 5, 3);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (8, true, false, 2, 5, 4);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (9, true, false, 2, 5, 2);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (10, false, true, 4, 5, 2);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (11, true, true, 4, 5, 2);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (12, false, true, 2, 5, 1);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (13, false, false, 3, 5, 1);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (14, true, true, 1, 5, 1);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (15, false, true, 4, 5, 3);
+
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (1, true, false, 2, 6, 2);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (2, false, false, 1, 6, 3);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (3, false, true, 3, 6, 4);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (4, true, true, 2, 6, 1);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (5, false, false, 1, 6, 1);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (6, true, true, 1, 6, 2);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (7, false, true, 4, 6, 2);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (8, true, true, 2, 6, 4);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (9, true, false, 3, 6, 2);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (10, true, false, 1, 6, 4);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (11, true, false, 4, 6, 4);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (12, false, false, 2, 6, 1);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (13, false, false, 1, 6, 2);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (14, false, true, 1, 6, 2);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (15, false, false, 3, 6, 2);
+
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (1, true, true, 3, 7, 4);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (2, false, true, 4, 7, 1);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (3, true, false, 3, 7, 2);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (4, true, true, 4, 7, 3);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (5, true, false, 3, 7, 2);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (6, true, false, 2, 7, 2);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (7, false, true, 3, 7, 2);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (8, true, false, 4, 7, 1);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (9, false, false, 2, 7, 3);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (10, false, true, 4, 7, 2);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (11, true, false, 2, 7, 4);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (12, true, false, 2, 7, 4);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (13, false, false, 2, 7, 2);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (14, false, false, 2, 7, 4);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (15, false, true, 2, 7, 3);
+
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (1, false, false, 3, 8, 2);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (2, true, false, 1, 8, 1);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (3, false, true, 4, 8, 2);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (4, false, true, 2, 8, 4);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (5, true, true, 4, 8, 1);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (6, true, false, 3, 8, 1);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (7, true, true, 1, 8, 3);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (8, true, true, 1, 8, 3);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (9, false, true, 2, 8, 2);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (10, true, false, 1, 8, 1);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (11, false, false, 4, 8, 4);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (12, true, false, 1, 8, 1);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (13, false, true, 1, 8, 3);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (14, true, false, 4, 8, 2);
+insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (15, false, false, 3, 8, 3);
+```
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTExNTk3MDMyMzcsLTE2NzMwMDg0NTUsLT
 g5MzgyNDg0LC0yNTY1MjE4NTMsLTE1ODkxNTA4ODcsLTEyMzUx
