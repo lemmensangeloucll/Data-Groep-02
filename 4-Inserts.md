@@ -353,6 +353,19 @@ insert into facturen (id, factuurnummer, beschrijving, prijs, btw, korting, tota
 insert into facturen (id, factuurnummer, beschrijving, prijs, btw, korting, totale_prijs, klant) values (300, '2020/571985', 'nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus', 2653.45, 557.22, null, 3210.67, 300);
 
 ```
+
+### bungalowpark
+```
+insert into bungalowpark (id, straat, huisnummer, postcode, gemeente) values (7, 'Ravenstraat', 481, 1813, 'Wilsele');
+insert into bungalowpark (id, straat, huisnummer, postcode, gemeente) values (4, 'Urselweg', 246, 9104, 'Begijnendijk');
+insert into bungalowpark (id, straat, huisnummer, postcode, gemeente) values (1, 'Urselweg', 1, 6861, 'Tienen');
+insert into bungalowpark (id, straat, huisnummer, postcode, gemeente) values (4, 'Mussenstraat', 262, 3797, 'Begijnendijk');
+insert into bungalowpark (id, straat, huisnummer, postcode, gemeente) values (3, 'Mussenstraat', 114, 7089, 'Geetbets');
+insert into bungalowpark (id, straat, huisnummer, postcode, gemeente) values (2, 'Ravenstraat', 16, 6050, 'Knokke-Heist');
+insert into bungalowpark (id, straat, huisnummer, postcode, gemeente) values (8, 'Urselweg', 404, 1809, 'Maldegem');
+insert into bungalowpark (id, straat, huisnummer, postcode, gemeente) values (7, 'Bondgenotenlaan', 204, 6416, 'Tielt-Winge');
+
+```
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbODg1NTQzMTM0LDcwNjgxMDc3LC00OTUwNz
 kxNDMsLTU0NDU4MDA4MywxODU0MzUyNDI5LDY2MzUzMjg5LC05
