@@ -17,9 +17,18 @@ where bungalowpark.postcode = '6861' and bungalow.beschikbaarheid = 'true' and r
 group by bungalownummer, beschikbaarheid
 ```
 
-2. Geef het reservatiennummer, datum en naam van het bungalowpark van alle reservaties die na 10/06/2020 en voor 15/09/2020 gemaakt zijn.
+2. Geef het reservatiennummer, datum en naam van het bungalowpark id van alle reservaties die na 10/06/2019 en voor 10/09/2019 gemaakt zijn.
 
-Reden: Zo kan de uitbater van een bungalowpark nagaan hoe druk de zomer ongeveer zal zijn.
+Reden: Zo kan de uitbater van een bungalowpark nagaan hoe druk de zomer ongeveer zal zijn of was tussen een bepaalde periode.
+
+```
+select reservatienummer, datum, bungalowpark.id
+from reservaties 
+full outer join bungalowpark on reservaties.bungalowpark = bungalowpark.id
+where reservaties.datum >= '2019-06-10'  and reservaties.datum <= '2019-09-10' 
+```
+
+
 
 
 3. Geef het gemiddelde van de totale prijs van alle facturen die door de klanten worden betaald.
