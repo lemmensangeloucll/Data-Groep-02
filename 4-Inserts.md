@@ -2089,6 +2089,8 @@ insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, b
 insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (14, false, false, 2, 7, 4);
 insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (15, false, true, 2, 7, 3);
 
+
+
 insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (1, false, false, 3, 8, 2);
 insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (2, true, false, 1, 8, 1);
 insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (3, false, true, 4, 8, 2);
@@ -2107,4 +2109,11 @@ insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, b
 ```
 
 
+### Arrangement
 
+```
+insert into arrangement (id, diensten, bijkomende_prijs, activiteiten) values (1, 'All-in', 250.00, 'Zwembad, Tafeltennis, Jacuzzi, Pooltafel, Onbijt');
+insert into arrangement (id, diensten, bijkomende_prijs, activiteiten) values (2, 'Onbijt', 50.00, 'Onbijt');
+insert into arrangement (id, diensten, bijkomende_prijs, activiteiten) values (3, 'Prive plezier', 74.00, 'Zwembad, Jacuzzi, PoolTafel');
+
+```
