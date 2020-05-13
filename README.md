@@ -24,13 +24,12 @@
  - [x] zone
  - [x] bungalow
  - [ ] reservaties
- - [ ] arrangement
-> Opnieuw doen!
+ - [ ] arrangement (OPNIEUW DOEN!)
  - [x] bungalowtype_has_faciliteiten
  - [x] facturen
  - [x] reparatie_aanvragen
  - [x] reservaties_has_zone
  - [ ] reservaties_has_arrangement
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3ODIzOTgwMV19
+eyJoaXN0b3J5IjpbMTk0ODA4NjcxNF19
 -->
