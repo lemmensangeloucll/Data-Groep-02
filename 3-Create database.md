@@ -217,6 +217,7 @@ CREATE TABLE reparatie_aanvragen (
   klant INT NOT NULL,
   bungalow INT NOT NULL,
   bungalowpark INT NOT NULL,
+  afgehandeld text NOT NULL DEFAULT 'FALSE',
   CONSTRAINT pk_reparatie_aanvragen PRIMARY KEY (aanvraagnummer),
   CONSTRAINT fk_reparatie_aanvragen_klanten1
     FOREIGN KEY (klant)
