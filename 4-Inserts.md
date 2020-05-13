@@ -2105,16 +2105,6 @@ insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, b
 insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (14, true, false, 4, 8, 2);
 insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (15, false, false, 3, 8, 3);
 ```
-### Bungalowpark
-```
-insert into bungalowpark (id, straat, huisnummer, postcode, gemeente) values (7, 'Ravenstraat', 481, 1813, 'Wilsele');
-insert into bungalowpark (id, straat, huisnummer, postcode, gemeente) values (4, 'Urselweg', 246, 9104, 'Begijnendijk');
-insert into bungalowpark (id, straat, huisnummer, postcode, gemeente) values (1, 'Urselweg', 1, 6861, 'Tienen');
-insert into bungalowpark (id, straat, huisnummer, postcode, gemeente) values (4, 'Mussenstraat', 262, 3797, 'Begijnendijk');
-insert into bungalowpark (id, straat, huisnummer, postcode, gemeente) values (3, 'Mussenstraat', 114, 7089, 'Geetbets');
-insert into bungalowpark (id, straat, huisnummer, postcode, gemeente) values (2, 'Ravenstraat', 16, 6050, 'Knokke-Heist');
-insert into bungalowpark (id, straat, huisnummer, postcode, gemeente) values (8, 'Urselweg', 404, 1809, 'Maldegem');
-insert into bungalowpark (id, straat, huisnummer, postcode, gemeente) values (7, 'Bondgenotenlaan', 204, 6416, 'Tielt-Winge');
-```
+
 
 
