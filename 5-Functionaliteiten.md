@@ -19,7 +19,7 @@ Reden: Zo kan mn een idee hebben wat een klant gemiddeld betaald na een bezoekje
 
 
 
-4. Geef het totaal aantal reservaties die in de zomer gedaan worden waarbij er extra activiteiten zijn gekozen.
+4. Geef het totaal aantal reservaties die in de zomer gedaan worden waarbij er meer dan 2 extra activiteiten zijn gekozen.
 
 Reden: Zo heeft mn zicht op de werknemers(eventueel vakantiejobbers)die mn nodig zal hebben in de zomer om de activiteiten te hosten.
 
