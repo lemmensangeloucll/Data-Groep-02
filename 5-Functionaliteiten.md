@@ -7,6 +7,15 @@ poscode XXXX die nog niet gereserveerd zijn en die geen reparatieaanvraag hebben
 
 Reden: Zo kan een klant bijvoorbeeld aanvragen of er in het dichtsbijzijnde bugalowpark nog een plaats is.
 
+#### Mogelijke oplossing - Gecontroleerd door: Angelo
+
+```
+select bungalownummer, beschikbaarheid from bungalow
+inner join bungalowpark on bungalow.bungalowpark = bungalowpark.id
+left join reparatie_aanvragen on bungalow.bungalownummer = reparatie_aanvragen.bungalow
+where bungalowpark.postcode = '6861' and bungalow.beschikbaarheid = 'true' and reparatie_aanvragen.afgehandeld = 'true'
+group by bungalownummer, beschikbaarheid
+```
 
 2. Geef het reservatiennummer, datum en naam van het bungalowpark van alle reservaties die na 10/06/2020 en voor 15/09/2020 gemaakt zijn.
 
