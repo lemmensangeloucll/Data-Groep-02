@@ -2127,7 +2127,31 @@ insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, b
 insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (14, true, false, 4, 8, 2);
 insert into bungalow (bungalownummer, ontruimd, beschikbaarheid, bungalowtype, bungalowpark, zone) values (15, false, false, 3, 8, 3);
 ```
-
+### Faciliteiten
+insert into faciliteiten (id, faciliteit) values (1, 'Boxspring');
+insert into faciliteiten (id, faciliteit) values (2, 'Privé jacuzzi');
+insert into faciliteiten (id, faciliteit) values (3, 'Privé terras');
+insert into faciliteiten (id, faciliteit) values (4, 'Vaatwas');
+insert into faciliteiten (id, faciliteit) values (5, 'Ontbijt');
+insert into faciliteiten (id, faciliteit) values (6, 'Wifi in de bungalow');
+insert into faciliteiten (id, faciliteit) values (7, 'Sauna');
+### Bungalowtype_has_faciliteiten
+insert into bungalowtype_has_faciliteiten (bungalowtype, faciliteit) values (1, 1);
+insert into bungalowtype_has_faciliteiten (bungalowtype, faciliteit) values (2, 1);
+insert into bungalowtype_has_faciliteiten (bungalowtype, faciliteit) values (3, 1);
+insert into bungalowtype_has_faciliteiten (bungalowtype, faciliteit) values (4, 1);
+insert into bungalowtype_has_faciliteiten (bungalowtype, faciliteit) values (4, 2);
+insert into bungalowtype_has_faciliteiten (bungalowtype, faciliteit) values (2, 3);
+insert into bungalowtype_has_faciliteiten (bungalowtype, faciliteit) values (3, 3);
+insert into bungalowtype_has_faciliteiten (bungalowtype, faciliteit) values (4, 3);
+insert into bungalowtype_has_faciliteiten (bungalowtype, faciliteit) values (1, 4);
+insert into bungalowtype_has_faciliteiten (bungalowtype, faciliteit) values (2, 4);
+insert into bungalowtype_has_faciliteiten (bungalowtype, faciliteit) values (3, 4);
+insert into bungalowtype_has_faciliteiten (bungalowtype, faciliteit) values (4, 4);
+insert into bungalowtype_has_faciliteiten (bungalowtype, faciliteit) values (4, 5);
+insert into bungalowtype_has_faciliteiten (bungalowtype, faciliteit) values (3, 6);
+insert into bungalowtype_has_faciliteiten (bungalowtype, faciliteit) values (4, 6);
+insert into bungalowtype_has_faciliteiten (bungalowtype, faciliteit) values (4, 7);
 
 ### Arrangement
 
