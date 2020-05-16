@@ -10,6 +10,7 @@
  - [x] bungalow
  - [ ] reservaties
  - [ ] arrangement
+ - [ ] faciliteiten
  - [ ] bungalowtype_has_faciliteiten
  - [x] facturen
  - [x] reparatie_aanvragen
