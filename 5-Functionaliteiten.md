@@ -30,6 +30,8 @@ where reservaties.datum >= '2019-06-10'  and reservaties.datum <= '2019-09-10'
 
 3. Welk bungalowtype werd al meer dan 10 keer gekozen bij reservaties voor het bungalowpark in Maldegem 
 en hoevaak wordt het er precies gekozen?
+
+Reden: Zo kan mn een idee hebben over hoeveel er voor een bepaald bungalotype gekozen wordt in een bepaald bungalowpark.
 ```
 select bungalowtype.klasse, count(reservaties.bungalowtype)
 from reservaties 
