@@ -44,14 +44,15 @@ having count(bungalowtype.id) > 10
 
 4. Geef het aantal reservaties waarvan de klanten hun gemeente niet hetzelfde is als de gemeente van het bungalowpark.
 
-
 Reden: Zo kan de eigenaar van een bungalowpark een idee hebben of de mensen van verder weg ook weet hebben over het bestaan van het bungalowpark. Zo niet kan de eigenaar wat meer reclame op verdere plaatsen voorzien.
 
 
 
 
 
-5. GEZOCHT
+5. Geef de 4 meest gekozen faciliteiten bij een reservatie waarbij de klant geen annuleringsverzekering heeft genomen.
+
+Reden: Zo weet de manager of de prijs van deze faciliteit moet stijgen of dalen en of dat er meer personeel moet worden voorzien voor deze faciliteit.
 
 
-#Geef het aantal klanten dat een annulatieverzekering neemt maar deze achteraf heeft geannuleerd
+
