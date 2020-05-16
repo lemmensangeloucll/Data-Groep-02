@@ -35,7 +35,9 @@ en hoevaak wordt het er precies gekozen?
 
 
 
+4. Geef het aantal klanten hen hun gemeente waarvan de gemeente van het bungalowpark waar ze reserveren niet hetzelfde is.
 
+Reden: Zo kan de eigenaar van een bungalowpark een idee hebben of de mensen van verder weg ook weet hebben over het bestaan van het bungalowpark.
 
 
 
