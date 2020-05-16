@@ -665,9 +665,29 @@ insert into bungalowpark (id, straat, huisnummer, postcode, gemeente) values (8,
 
 ### Periode
 ```
-
+INSERT INTO mytable(id,duur,datum,seizoen) VALUES (1,'2weken','01/12/2020','winter');
+INSERT INTO mytable(id,duur,datum,seizoen) VALUES (2,'3weken','30/04/2020','herfst');
+INSERT INTO mytable(id,duur,datum,seizoen) VALUES (3,'1week','16/06/2020','lente');
+INSERT INTO mytable(id,duur,datum,seizoen) VALUES (4,'2weken','02/12/2020','zomer');
 
 ```
+
+### Bungalowtype
+```
+INSERT INTO bungalowtype(id,klasse,capaciteit) VALUES (1,'klassiek','2 personen');
+INSERT INTO bungalowtype(id,klasse,capaciteit) VALUES (2,'suite','2 personen');
+INSERT INTO bungalowtype(id,klasse,capaciteit) VALUES (3,'luxueus','4 personen');
+INSERT INTO bungalowtype(id,klasse,capaciteit) VALUES (4,'deluxe','6 personen');
+```
+
+### Zone
+```
+INSERT INTO zone(id,uitzicht,nabijheid) VALUES (1,'water','3kilometer van de ingang');
+INSERT INTO zone(id,uitzicht,nabijheid) VALUES (2,'bos','2kilometer van de ingang');
+INSERT INTO zone(id,uitzicht,nabijheid) VALUES (3,'weide','1kilometer van de ingang');
+INSERT INTO zone(id,uitzicht,nabijheid) VALUES (4,'straat','1kilometer van de ingang');
+```
+
 ### Reparatie_aanvragen
 ```
 insert into reparatie_aanvragen (aanvraagnummer, tijdstip, prioriteit, beschrijving, vaardigheid, klant, bungalow, bungalowpark, afgehandeld) values (1, '2020-03-22 12:23:39', 'Urgent', 'Verf vervaagt', 'Schilder', 227, 9, 6, false);
