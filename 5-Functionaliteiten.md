@@ -28,6 +28,14 @@ full outer join bungalowpark on reservaties.bungalowpark = bungalowpark.id
 where reservaties.datum >= '2019-06-10'  and reservaties.datum <= '2019-09-10' 
 ```
 
+3. Welk bungalowtype werd al meer dan 50 keer gekozen bij reservaties voor het bungalowpark in de Ravenstraat 1813 
+en hoevaak wordt het er precies gekozen?
+
+
+
+
+
+
 
 
 
