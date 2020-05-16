@@ -42,12 +42,10 @@ having count(bungalowtype.id) > 10
 
 
 
+4. Geef het aantal reservaties waarvan de klanten hun gemeente niet hetzelfde is als de gemeente van het bungalowpark.
 
 
-
-4. Geef het aantal klanten hen hun gemeente waarvan de gemeente van het bungalowpark waar ze reserveren niet hetzelfde is.
-
-Reden: Zo kan de eigenaar van een bungalowpark een idee hebben of de mensen van verder weg ook weet hebben over het bestaan van het bungalowpark.
+Reden: Zo kan de eigenaar van een bungalowpark een idee hebben of de mensen van verder weg ook weet hebben over het bestaan van het bungalowpark. Zo niet kan de eigenaar wat meer reclame op verdere plaatsen voorzien.
 
 
 
