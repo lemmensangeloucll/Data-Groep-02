@@ -28,8 +28,18 @@ full outer join bungalowpark on reservaties.bungalowpark = bungalowpark.id
 where reservaties.datum >= '2019-06-10'  and reservaties.datum <= '2019-09-10' 
 ```
 
-3. Welk bungalowtype werd al meer dan 50 keer gekozen bij reservaties voor het bungalowpark in de Ravenstraat 1813 
+3. Welk bungalowtype werd al meer dan 10 keer gekozen bij reservaties voor het bungalowpark in Maldegem 
 en hoevaak wordt het er precies gekozen?
+```
+select bungalowtype.klasse, count(reservaties.bungalowtype)
+from reservaties 
+inner join bungalowtype on reservaties.bungalowtype = bungalowtype.id
+inner join bungalowpark on reservaties.bungalowpark = bungalowpark.id
+where bungalowpark.gemeente = 'Maldegem'
+group by bungalowtype.klasse
+having count(bungalowtype.id) > 10
+```
+
 
 
 
