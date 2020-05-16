@@ -20,6 +20,8 @@ drop table periode;
 drop table bungalowpark;
 drop table klanten;
 ```
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMzgzNTUzNTJdfQ==
--->
+
+### Het droppen van je database
+```
+DROP SCHEMA "R1TX32_team02";
+```
