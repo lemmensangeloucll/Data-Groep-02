@@ -46,8 +46,13 @@ having count(bungalowtype.id) > 10
 
 Reden: Zo kan de eigenaar van een bungalowpark een idee hebben of de mensen van verder weg ook weet hebben over het bestaan van het bungalowpark. Zo niet kan de eigenaar wat meer reclame op verdere plaatsen voorzien.
 
-
-
+```
+select count(reservaties) as aantal
+from reservaties
+inner join klanten on reservaties.klant = klanten.id
+inner join bungalowpark on reservaties.bungalowpark = bungalowpark.id
+where klanten.gemeente <> bungalowpark.gemeente
+```
 
 
 5. Geef de 4 meest gekozen faciliteiten bij een reservatie waarbij de klant geen annuleringsverzekering heeft genomen.
