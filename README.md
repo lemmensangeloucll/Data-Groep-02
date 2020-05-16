@@ -10,7 +10,6 @@
  - [x] bungalow
  - [ ] reservaties
  - [ ] arrangement
- - [ ] faciliteiten
  - [ ] bungalowtype_has_faciliteiten
  - [x] facturen
  - [x] reparatie_aanvragen
@@ -26,6 +25,7 @@
  - [x] bungalow
  - [ ] reservaties
  - [ ] arrangement (OPNIEUW DOEN!)
+ - [ ] faciliteiten (OPNIEUW, klopt iets niet)
  - [x] bungalowtype_has_faciliteiten
  - [x] facturen
  - [x] reparatie_aanvragen
