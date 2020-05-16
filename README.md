@@ -4,9 +4,9 @@
 
  - [x] klanten
  - [x] bungalowpark
- - [ ] periode
- - [ ] bungalowtype
- - [ ] zone
+ - [x] periode
+ - [x] bungalowtype
+ - [x] zone
  - [x] bungalow
  - [ ] reservaties
  - [ ] arrangement
