@@ -33,6 +33,7 @@
 -- Leuven,Knokke-Heist,Kessel-lo,Maldegem,Wilsele,Tienen,Tielt-Winge,Diest,Begijnendijk,Geetbets
 
 -- Start insert script
+SET search_path TO "R1TX32_team02";
 --  Klanten
 insert into klanten (id, voornaam, achternaam, straatnaam, huisnummer, gemeente, postcode) values (1, 'Alfons', 'Lanon', 'Ravenstraat', 395, 'Wilsele', 3587);
 insert into klanten (id, voornaam, achternaam, straatnaam, huisnummer, gemeente, postcode) values (2, 'Kippy', 'Putley', 'Ravenstraat', 464, 'Begijnendijk', 5387);
