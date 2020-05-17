@@ -61,5 +61,16 @@ where klanten.gemeente <> bungalowpark.gemeente
 
 Reden: Zo weet de manager of de prijs van deze faciliteit moet stijgen of dalen en of dat er meer personeel moet worden voorzien voor deze faciliteit.
 
-
+```
+SET search_path TO "R1TX32_team02";
+select faciliteiten.faciliteit
+from faciliteiten
+inner join bungalowtype_has_faciliteiten on faciliteiten.id = bungalowtype_has_faciliteiten.faciliteit
+inner join bungalowtype on bungalowtype_has_faciliteiten.bungalowtype = bungalowtype.id
+inner join reservaties on bungalowtype.id = reservaties.bungalowtype
+where reservaties.annulatieverzekering = '0'
+group by faciliteiten.faciliteit
+order by faciliteiten.faciliteit
+limit 4
+```
 
